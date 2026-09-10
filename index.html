@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Academic English — Preparación del examen</title>
+<meta name="description" content="Estudio y autoevaluación de las ocho estructuras del examen de Academic English.">
+<style>
+:root{
+  --navy:#14213D; --navy-soft:#25355c; --bg:#F4F6FA; --bg-2:#EAEEF6; --card:#FFFFFF;
+  --ink:#1B2333; --ink-2:#4A5568; --ink-3:#77808F; --line:#DDE3ED; --line-2:#C9D2E0;
+  --vp:#1B8A3A; --aux:#1257A6; --suj:#E07B00; --adj:#7B2D8E; --key:#C0392B;
+  --vp-bg:rgba(27,138,58,.10); --aux-bg:rgba(18,87,166,.10); --suj-bg:rgba(224,123,0,.12);
+  --adj-bg:rgba(123,45,142,.10); --key-bg:rgba(192,57,43,.10);
+  --ok:#12703A; --ok-bg:#E7F4EC; --bad:#B02A20; --bad-bg:#FBECEA; --warn:#8A6100; --warn-bg:#FDF3E0;
+  --shadow:0 1px 2px rgba(20,33,61,.05), 0 6px 18px rgba(20,33,61,.06);
+  --shadow-lg:0 2px 6px rgba(20,33,61,.07), 0 18px 40px rgba(20,33,61,.10);
+  --r:14px; --r-s:9px;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter","Helvetica Neue",Arial,sans-serif;
+}
+html[data-theme="dark"]{
+  --navy:#0D1526; --navy-soft:#1B2740; --bg:#0F1622; --bg-2:#161F2E; --card:#18212F;
+  --ink:#E8ECF3; --ink-2:#AEB8C8; --ink-3:#8592A6; --line:#2A3648; --line-2:#41506B;
+  --vp:#4BC46E; --aux:#6BA6EE; --suj:#F0A64A; --adj:#C288D6; --key:#EE8478;
+  --vp-bg:rgba(75,196,110,.14); --aux-bg:rgba(107,166,238,.14); --suj-bg:rgba(240,166,74,.14);
+  --adj-bg:rgba(194,136,214,.14); --key-bg:rgba(238,132,120,.14);
+  --ok:#5FD08A; --ok-bg:rgba(75,196,110,.13); --bad:#F08A7E; --bad-bg:rgba(238,132,120,.13);
+  --warn:#E7B75C; --warn-bg:rgba(231,183,92,.13);
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.35), 0 18px 40px rgba(0,0,0,.4);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;transition:background .25s ease,color .25s ease}
+h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.01em}
+button{font-family:inherit;font-size:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--aux);outline-offset:2px;border-radius:6px}
+
+/* ---------- Cabecera ---------- */
+.top{background:var(--navy);color:#fff;padding:18px 20px 16px;position:relative;overflow:hidden}
+.top::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;
+  background:linear-gradient(90deg,var(--suj) 0 20%,var(--vp) 20% 40%,var(--aux) 40% 60%,var(--adj) 60% 80%,var(--key) 80% 100%)}
+.top-in{max-width:1080px;margin:0 auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.brand{flex:1 1 260px;min-width:0}
+.brand h1{font-size:clamp(1.15rem,3.4vw,1.5rem);color:#fff}
+.brand p{margin:3px 0 0;font-size:.82rem;color:#A9B7D4;letter-spacing:.02em}
+.count{display:flex;align-items:baseline;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--r-s);padding:7px 13px}
+.count b{font-size:1.5rem;font-weight:700;color:#fff;line-height:1}
+.count span{font-size:.74rem;color:#A9B7D4;text-transform:uppercase;letter-spacing:.09em}
+.top-btns{display:flex;gap:8px}
+.ibtn{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);color:#E6ECF8;border-radius:var(--r-s);
+  padding:8px 12px;cursor:pointer;font-size:.8rem;font-weight:550;transition:background .18s ease,border-color .18s ease}
+.ibtn:hover{background:rgba(255,255,255,.18)}
+
+/* ---------- Pestañas ---------- */
+.tabs{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.tabs-in{max-width:1080px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{flex:1 0 auto;background:none;border:0;border-bottom:3px solid transparent;padding:13px 18px;cursor:pointer;
+  font-weight:600;font-size:.9rem;color:var(--ink-3);white-space:nowrap;transition:color .18s ease,border-color .18s ease}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--suj)}
+html[data-theme="dark"] .tab[aria-selected="true"]{color:var(--ink)}
+
+/* ---------- Leyenda ---------- */
+.legend{max-width:1080px;margin:0 auto;padding:10px 20px 0;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.lg{display:inline-flex;align-items:center;gap:6px;font-size:.76rem;color:var(--ink-2);font-weight:550}
+.dot{width:11px;height:11px;border-radius:3px;flex:none}
+.d-vp{background:var(--vp)}.d-aux{background:var(--aux)}.d-suj{background:var(--suj)}.d-adj{background:var(--adj)}.d-key{background:var(--key)}
+
+/* ---------- Estructura ---------- */
+main{max-width:1080px;margin:0 auto;padding:16px 20px 72px}
+.view[hidden]{display:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;margin-bottom:16px}
+.muted{color:var(--ink-2);font-size:.9rem}
+.small{font-size:.82rem;color:var(--ink-3)}
+
+/* ---------- Botones ---------- */
+.btn{background:var(--navy);color:#fff;border:1px solid var(--navy);border-radius:var(--r-s);padding:11px 18px;
+  font-weight:600;cursor:pointer;transition:transform .12s ease,opacity .18s ease,background .18s ease}
+.btn:hover{opacity:.92}.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn.ghost:hover{background:var(--bg-2)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.sm{padding:8px 13px;font-size:.85rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* ---------- Repaso ---------- */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;
+  display:flex;flex-direction:column}
+.bcard h3{padding:15px 18px 0;font-size:1.05rem;display:flex;gap:9px;align-items:center}
+.num{width:24px;height:24px;border-radius:6px;background:var(--navy);color:#fff;display:grid;place-items:center;
+  font-size:.76rem;font-weight:700;flex:none}
+.formula{margin:12px 18px;padding:11px 13px;background:var(--bg-2);border-radius:var(--r-s);border:1px solid var(--line);
+  font-size:.94rem;font-weight:600;line-height:1.6}
+.ex{padding:0 18px;margin-bottom:12px}
+.ex-row{padding:9px 0;border-top:1px dashed var(--line)}
+.ex-tag{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-weight:700}
+.ex-s{font-size:1rem;line-height:1.9;margin-top:2px}
+.rules{padding:0 18px 14px;font-size:.86rem;color:var(--ink-2)}
+.rules ul{margin:6px 0 0;padding-left:18px}.rules li{margin:3px 0}
+.rules code{background:var(--bg-2);padding:1px 5px;border-radius:4px;font-size:.85em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+details.errs{margin:auto 18px 18px;border:1px solid var(--line);border-radius:var(--r-s);background:var(--bad-bg)}
+details.errs summary{cursor:pointer;padding:10px 13px;font-weight:600;font-size:.86rem;color:var(--bad);list-style:none}
+details.errs summary::-webkit-details-marker{display:none}
+details.errs summary::before{content:"▸ ";display:inline-block;transition:transform .18s ease}
+details.errs[open] summary::before{content:"▾ "}
+details.errs ul{margin:0;padding:0 16px 12px 32px;font-size:.85rem;color:var(--ink-2)}
+details.errs li{margin:5px 0}
+.x-mark{color:var(--bad);font-weight:700}.ok-mark{color:var(--ok);font-weight:700}
+
+/* ---------- Palabras de la oración ---------- */
+.stim{background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:var(--r-s);
+  padding:18px 18px 16px;margin-bottom:18px}
+.stim-lab{font-size:.68rem;text-transform:uppercase;letter-spacing:.11em;color:var(--ink-3);font-weight:700;margin-bottom:8px}
+.sent{font-size:clamp(1.16rem,3.6vw,1.55rem);line-height:2.1;font-weight:550;letter-spacing:-.005em;word-spacing:.04em}
+.sent.rev{line-height:2.7}
+.w{display:inline-block;padding:2px 3px;border-radius:5px;transition:background .15s ease,color .15s ease}
+.w.clk{cursor:pointer;border:1px solid transparent;padding:6px 8px;margin:0 1px;min-height:38px;
+  background:var(--card);border-color:var(--line-2);user-select:none}
+.w.clk:hover{background:var(--bg);border-color:var(--navy)}
+.w.clk.sel{background:var(--navy);color:#fff;border-color:var(--navy)}
+.w.clk.hit{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.w.clk.miss{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);text-decoration:line-through}
+.w.clk.shown{background:var(--warn-bg);border-color:var(--warn);color:var(--warn)}
+.w.clk[disabled]{cursor:default}
+.r-v{color:var(--vp);background:var(--vp-bg);font-weight:650}
+.r-a{color:var(--aux);background:var(--aux-bg);font-weight:650}
+.r-s{color:var(--suj);background:var(--suj-bg);font-weight:650}
+.r-j{color:var(--adj);background:var(--adj-bg);font-weight:650}
+.r-k{color:var(--key);background:var(--key-bg);font-weight:650}
+.wwrap{display:inline-flex;flex-direction:column;align-items:center;margin:0 2px;vertical-align:top}
+.wtag{font-size:.6rem;letter-spacing:.05em;text-transform:uppercase;font-weight:700;margin-top:-4px;opacity:.85}
+.t-v{color:var(--vp)}.t-a{color:var(--aux)}.t-s{color:var(--suj)}.t-j{color:var(--adj)}.t-k{color:var(--key)}
+
+/* ---------- Preguntas ---------- */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.chip{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 9px;border-radius:20px;
+  background:var(--bg-2);color:var(--ink-2);border:1px solid var(--line)}
+.chip.type{background:var(--navy);color:#fff;border-color:var(--navy)}
+.qtext{font-size:1.03rem;font-weight:600;margin-bottom:14px;line-height:1.5}
+.opts{display:grid;gap:9px}
+.opt{display:flex;gap:11px;align-items:flex-start;text-align:left;background:var(--card);border:1px solid var(--line-2);
+  border-radius:var(--r-s);padding:12px 14px;cursor:pointer;transition:border-color .15s ease,background .15s ease;width:100%}
+.opt:hover{border-color:var(--navy);background:var(--bg-2)}
+.opt.sel{border-color:var(--navy);background:var(--bg-2);box-shadow:inset 0 0 0 1px var(--navy)}
+.opt.good{border-color:var(--ok);background:var(--ok-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt kbd{flex:none;width:22px;height:22px;border-radius:5px;background:var(--bg-2);border:1px solid var(--line-2);
+  font-size:.72rem;font-weight:700;display:grid;place-items:center;font-family:inherit;color:var(--ink-2)}
+.opt.sel kbd,.opt.good kbd,.opt.wrong kbd{background:var(--card)}
+input[type=text],select,textarea{font-family:inherit;font-size:1rem;padding:11px 13px;border:1px solid var(--line-2);
+  border-radius:var(--r-s);background:var(--card);color:var(--ink);width:100%;max-width:520px}
+input[type=text]:focus,textarea:focus{border-color:var(--navy)}
+label.fl{display:block;font-size:.8rem;font-weight:650;color:var(--ink-2);margin-bottom:6px}
+.fb{margin-top:14px;padding:13px 15px;border-radius:var(--r-s);border:1px solid;font-size:.92rem;animation:pop .22s ease}
+@keyframes pop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.fb.good{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.fb.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.fb b{display:block;margin-bottom:3px;font-size:.95rem}
+.fb .why{color:var(--ink-2);display:block;margin-top:6px;font-weight:400}
+html[data-theme="dark"] .fb .why{color:var(--ink-2)}
+.hintbox{margin-top:12px;padding:11px 14px;background:var(--warn-bg);border:1px solid var(--warn);border-radius:var(--r-s);
+  font-size:.88rem;color:var(--warn)}
+
+/* ---------- Etiquetado ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.lchip{border:1px solid var(--line-2);background:var(--card);border-radius:20px;padding:8px 14px;font-size:.83rem;
+  font-weight:650;cursor:pointer;transition:all .15s ease}
+.lchip[data-r="v"]{color:var(--vp)}.lchip[data-r="a"]{color:var(--aux)}.lchip[data-r="s"]{color:var(--suj)}
+.lchip[data-r="j"]{color:var(--adj)}.lchip[data-r="k"]{color:var(--key)}.lchip[data-r="x"]{color:var(--ink-3)}
+.lchip.on{color:#fff}
+.lchip.on[data-r="v"]{background:var(--vp);border-color:var(--vp)}
+.lchip.on[data-r="a"]{background:var(--aux);border-color:var(--aux)}
+.lchip.on[data-r="s"]{background:var(--suj);border-color:var(--suj)}
+.lchip.on[data-r="j"]{background:var(--adj);border-color:var(--adj)}
+.lchip.on[data-r="k"]{background:var(--key);border-color:var(--key)}
+.lchip.on[data-r="x"]{background:var(--ink-3);border-color:var(--ink-3)}
+.tokrow{display:flex;flex-wrap:wrap;gap:8px}
+.tok{display:flex;flex-direction:column;align-items:center;gap:2px}
+.tok .w.clk{margin:0}
+.tok .asg{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;min-height:13px;color:var(--ink-3)}
+
+/* ---------- Barra de progreso / navegación ---------- */
+.pbar{height:6px;background:var(--bg-2);border-radius:20px;overflow:hidden;margin-bottom:14px;border:1px solid var(--line)}
+.pbar i{display:block;height:100%;background:linear-gradient(90deg,var(--navy),var(--aux));transition:width .35s ease}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;font-size:1.05rem;padding:6px 12px;border-radius:var(--r-s);
+  background:var(--bg-2);border:1px solid var(--line)}
+.timer.low{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
+
+/* ---------- Estadísticas ---------- */
+.stat-grid{display:grid;gap:11px}
+.stat{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center}
+.stat .nm{font-size:.88rem;font-weight:600}
+.stat .vl{font-size:.82rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.meter{grid-column:1/-1;height:9px;background:var(--bg-2);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.meter i{display:block;height:100%;border-radius:20px;transition:width .5s ease}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:18px}
+.kpi{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-s);padding:14px}
+.kpi b{display:block;font-size:1.65rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);font-weight:650}
+.rec{background:var(--warn-bg);border:1px solid var(--warn);border-radius:var(--r-s);padding:14px;color:var(--warn);font-size:.9rem}
+.errlist{display:grid;gap:10px}
+.erritem{border:1px solid var(--line);border-left:3px solid var(--bad);border-radius:var(--r-s);padding:12px 14px;background:var(--bg-2)}
+.erritem .q{font-weight:600;font-size:.92rem}
+.erritem .a{font-size:.86rem;margin-top:5px}
+.big-score{text-align:center;padding:8px 0 18px}
+.big-score b{font-size:3.2rem;font-weight:700;line-height:1;display:block;font-variant-numeric:tabular-nums}
+.big-score span{color:var(--ink-2);font-size:.95rem}
+.kbd-help{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.76rem;color:var(--ink-3);margin-top:14px}
+.kbd-help kbd{background:var(--bg-2);border:1px solid var(--line-2);border-radius:4px;padding:1px 6px;font-family:inherit;font-weight:650}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:560px){
+  main{padding:12px 13px 60px}.card{padding:16px 14px}.legend{padding:9px 13px 0}
+  .grid{grid-template-columns:1fr}.top{padding:14px 14px 12px}
+  .sent{line-height:2.3}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <h1>Academic English — Preparación del examen</h1>
+      <p id="examDate">Examen: jueves, 10 de septiembre de 2026</p>
+    </div>
+    <div class="count" aria-live="polite"><b id="cdNum">—</b><span id="cdLab">días</span></div>
+    <div class="top-btns">
+      <button class="ibtn" id="themeBtn" aria-pressed="false">Modo oscuro</button>
+      <button class="ibtn" id="resetBtn">Reiniciar</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Secciones">
+  <div class="tabs-in">
+    <button class="tab" role="tab" id="tab-repaso"   aria-selected="true"  aria-controls="v-repaso">Repaso</button>
+    <button class="tab" role="tab" id="tab-practica" aria-selected="false" aria-controls="v-practica">Práctica</button>
+    <button class="tab" role="tab" id="tab-examen"   aria-selected="false" aria-controls="v-examen">Examen simulado</button>
+    <button class="tab" role="tab" id="tab-progreso" aria-selected="false" aria-controls="v-progreso">Progreso</button>
+  </div>
+</nav>
+
+<div class="legend" aria-label="Código de color">
+  <span class="lg"><i class="dot d-vp"></i>Verbo principal</span>
+  <span class="lg"><i class="dot d-aux"></i>Auxiliar o modal</span>
+  <span class="lg"><i class="dot d-suj"></i>Sujeto</span>
+  <span class="lg"><i class="dot d-adj"></i>Adjetivo comp./superl.</span>
+  <span class="lg"><i class="dot d-key"></i>Conector clave (if, than, the)</span>
+</div>
+
+<main>
+  <section class="view" id="v-repaso" role="tabpanel" aria-labelledby="tab-repaso">
+    <div class="card">
+      <h2 style="font-size:1.15rem">Las ocho estructuras del examen</h2>
+      <p class="muted" style="margin:6px 0 0">Cada tarjeta muestra la fórmula, tres ejemplos con los componentes coloreados,
+      las reglas de ortografía y los errores que más se repiten. Los colores son los mismos en toda la página.</p>
+    </div>
+    <div class="grid" id="repasoGrid"></div>
+  </section>
+
+  <section class="view" id="v-practica" role="tabpanel" aria-labelledby="tab-practica" hidden>
+    <div class="card" id="pSetup">
+      <h2 style="font-size:1.15rem">Práctica sin límite de tiempo</h2>
+      <p class="muted" style="margin:6px 0 14px">Se muestra una oración y se encadenan entre 2 y 5 preguntas sobre ella.
+      Al terminar cada oración la verás etiquetada por completo.</p>
+      <label class="fl" for="pTopic">Tema</label>
+      <div class="row">
+        <select id="pTopic" style="max-width:340px"></select>
+        <button class="btn" id="pStart">Empezar práctica</button>
+      </div>
+      <div class="kbd-help">
+        <span><kbd>Enter</kbd> comprobar / continuar</span>
+        <span><kbd>1</kbd>–<kbd>4</kbd> elegir opción</span>
+        <span><kbd>←</kbd> <kbd>→</kbd> navegar</span>
+      </div>
+    </div>
+    <div id="pRun" hidden></div>
+  </section>
+
+  <section class="view" id="v-examen" role="tabpanel" aria-labelledby="tab-examen" hidden>
+    <div class="card" id="eSetup">
+      <h2 style="font-size:1.15rem">Examen simulado</h2>
+      <p class="muted" style="margin:6px 0 14px">30 preguntas mezcladas de los 8 temas y de todos los tipos, en orden aleatorio.
+      Tiempo: 25 minutos. Al terminar verás la nota, el desglose por tema y por tipo de pregunta, y la lista de errores con su explicación.</p>
+      <button class="btn" id="eStart">Comenzar examen</button>
+    </div>
+    <div id="eRun" hidden></div>
+    <div id="eResult" hidden></div>
+  </section>
+
+  <section class="view" id="v-progreso" role="tabpanel" aria-labelledby="tab-progreso" hidden>
+    <div id="progBody"></div>
+  </section>
+</main>
+
+<script>
+"use strict";
+/* =====================================================================
+   1. DATOS: bloques gramaticales y material de repaso
+   ===================================================================== */
+const ROLE_NAME  = {v:'Verbo principal', a:'Auxiliar o modal', s:'Sujeto', j:'Adjetivo comp./superl.', k:'Conector clave', x:'Otro'};
+const ROLE_SHORT = {v:'Verbo', a:'Auxiliar', s:'Sujeto', j:'Adjetivo', k:'Conector', x:'Otro'};
+const ROLE_ORDER = ['s','a','v','j','k','x'];
+
+const BLOCKS = [
+{ id:'second', n:1, name:'Second Conditional', color:'#1257A6',
+  formula:'If + sujeto + <em>past simple</em>, sujeto + <em>would</em> + infinitivo',
+  formulaTxt:'If + past simple, would + infinitivo',
+  use:'Situaciones imaginarias o improbables en el presente o el futuro.',
+  ex:[ ['Afirmativa','If:k I:s had:v a car, I:s would:a drive:v to work.'],
+       ['Negativa','If:k I:s didn’t:a have:v a car, I:s would:a take:v the bus.'],
+       ['Pregunta','What would:a you:s do:v if:k you:s had:v more money?'] ],
+  rules:['El verbo tras <code>if</code> va en pasado simple: <code>study &rarr; studied</code>, <code>stop &rarr; stopped</code>.',
+    'Tras <code>would</code> siempre va el infinitivo sin <code>to</code>.',
+    'Con el verbo <code>be</code> se admite <code>were</code> para todas las personas: <em>If I were you…</em>',
+    'Contracción: <code>I would &rarr; I’d</code>; negativa <code>would not &rarr; wouldn’t</code>.'],
+  errs:['<span class="x-mark">&#10007;</span> If I <em>would have</em> a car… &rarr; <span class="ok-mark">&#10003;</span> If I <em>had</em> a car…',
+    '<span class="x-mark">&#10007;</span> If I <em>will have</em> time… &rarr; nunca <code>will</code> detrás de <code>if</code>.',
+    '<span class="x-mark">&#10007;</span> I would <em>drove</em> &rarr; <span class="ok-mark">&#10003;</span> I would <em>drive</em>.'],
+  confuse:['third','pastsimple','futcont'] },
+
+{ id:'third', n:2, name:'Third Conditional', color:'#7B2D8E',
+  formula:'If + sujeto + <em>had</em> + participio, sujeto + <em>would have</em> + participio',
+  formulaTxt:'If + past perfect, would have + participio',
+  use:'Situaciones imaginarias del pasado que ya no pueden cambiarse.',
+  ex:[ ['Afirmativa','If:k she:s had:a studied:v, she:s would:a have:a passed:v the exam.'],
+       ['Negativa','If:k she:s hadn’t:a studied:v, she:s wouldn’t:a have:a passed:v the exam.'],
+       ['Pregunta','Would:a you:s have:a helped:v me if:k I:s had:a asked:v?'] ],
+  rules:['Condición: <code>had</code> + participio (3ª columna o <code>-ed</code>).',
+    'Resultado: <code>would have</code> + participio. <code>have</code> nunca cambia a <code>has</code>.',
+    'Contracciones: <code>hadn’t</code>, <code>would’ve</code>, <code>wouldn’t have</code>.'],
+  errs:['<span class="x-mark">&#10007;</span> If she <em>would have</em> studied &rarr; <span class="ok-mark">&#10003;</span> If she <em>had</em> studied.',
+    '<span class="x-mark">&#10007;</span> she would <em>has</em> passed &rarr; <span class="ok-mark">&#10003;</span> she would <em>have</em> passed.',
+    '<span class="x-mark">&#10007;</span> would have <em>pass</em> &rarr; <span class="ok-mark">&#10003;</span> would have <em>passed</em>.'],
+  confuse:['second','pastperf','pastpart'] },
+
+{ id:'comp', n:3, name:'Comparatives', color:'#E07B00',
+  formula:'sujeto + verbo + adjetivo<em>-er</em> / <em>more</em> + adjetivo + <em>than</em> + …',
+  formulaTxt:'adjetivo-er / more + adjetivo + than',
+  use:'Comparar dos elementos entre sí.',
+  ex:[ ['Afirmativa','My brother:s is:v taller:j than:k my sister.'],
+       ['Negativa','My brother:s isn’t:v taller:j than:k my sister.'],
+       ['Pregunta','Is:v your brother:s taller:j than:k your sister?'] ],
+  rules:['Una sílaba: <code>+ -er</code> (<code>tall &rarr; taller</code>). Acabado en <code>-e</code>: <code>+ -r</code> (<code>nice &rarr; nicer</code>).',
+    'Consonante + <code>y</code>: <code>-ier</code> (<code>easy &rarr; easier</code>). Consonante-vocal-consonante: se dobla (<code>big &rarr; bigger</code>).',
+    'Dos sílabas o más: <code>more</code> + adjetivo (<code>more interesting</code>).',
+    'Irregulares: <code>good &rarr; better</code>, <code>bad &rarr; worse</code>, <code>far &rarr; further</code>.',
+    'Aquí <code>be</code> (<code>is/are/was</code>) funciona como verbo principal, no como auxiliar.'],
+  errs:['<span class="x-mark">&#10007;</span> <em>more taller</em> &rarr; nunca se usan las dos formas a la vez.',
+    '<span class="x-mark">&#10007;</span> <em>more big</em> &rarr; <span class="ok-mark">&#10003;</span> <em>bigger</em>.',
+    '<span class="x-mark">&#10007;</span> taller <em>that</em> my sister &rarr; <span class="ok-mark">&#10003;</span> taller <em>than</em>.'],
+  confuse:['sup','pastsimple','pastpart'] },
+
+{ id:'sup', n:4, name:'Superlatives', color:'#C0392B',
+  formula:'<em>the</em> + adjetivo<em>-est</em> / <em>the most</em> + adjetivo (+ in / of …)',
+  formulaTxt:'the + adjetivo-est / the most + adjetivo',
+  use:'Destacar un elemento sobre todo un grupo.',
+  ex:[ ['Afirmativa','She:s is:v the:k best:j student in the class.'],
+       ['Negativa','She:s isn’t:v the:k best:j student in the class.'],
+       ['Pregunta','Is:v she:s the:k best:j student in the class?'] ],
+  rules:['<code>the</code> es obligatorio delante del superlativo.',
+    'Una sílaba: <code>the + -est</code> (<code>tall &rarr; the tallest</code>). Tres o más: <code>the most</code> + adjetivo.',
+    'Se usa <code>in</code> con lugares y grupos (<em>in the class</em>) y <code>of</code> con periodos (<em>of the year</em>).',
+    'Irregulares: <code>the best</code>, <code>the worst</code>, <code>the furthest</code>.'],
+  errs:['<span class="x-mark">&#10007;</span> She is <em>best</em> student &rarr; falta <code>the</code>.',
+    '<span class="x-mark">&#10007;</span> <em>the most tallest</em> &rarr; solo una marca de superlativo.',
+    '<span class="x-mark">&#10007;</span> the best <em>than</em> &rarr; <code>than</code> es del comparativo, no del superlativo.'],
+  confuse:['comp','pastsimple','pastpart'] },
+
+{ id:'futcont', n:5, name:'Future Continuous', color:'#1B8A3A',
+  formula:'sujeto + <em>will be</em> + verbo<em>-ing</em>',
+  formulaTxt:'will be + verbo-ing',
+  use:'Acción en desarrollo en un momento concreto del futuro.',
+  ex:[ ['Afirmativa','I:s will:a be:a working:v at eight tomorrow.'],
+       ['Negativa','I:s won’t:a be:a working:v at eight tomorrow.'],
+       ['Pregunta','Will:a you:s be:a working:v at eight tomorrow?'] ],
+  rules:['<code>will be</code> es igual para todas las personas.',
+    'Ortografía del gerundio: <code>make &rarr; making</code>, <code>run &rarr; running</code>, <code>study &rarr; studying</code>.',
+    'Contracciones: <code>I’ll be</code>, <code>won’t be</code>.',
+    'En preguntas se adelanta <code>will</code>: <em>Will you be…?</em>'],
+  errs:['<span class="x-mark">&#10007;</span> I will <em>working</em> &rarr; falta <code>be</code>.',
+    '<span class="x-mark">&#10007;</span> I will be <em>work</em> &rarr; <span class="ok-mark">&#10003;</span> <em>working</em>.',
+    '<span class="x-mark">&#10007;</span> I will be <em>to work</em> &rarr; nunca <code>to</code> después de <code>be</code>.'],
+  confuse:['pastsimple','second','pastpart'] },
+
+{ id:'pastsimple', n:6, name:'Past Simple', color:'#14213D',
+  formula:'sujeto + verbo<em>-ed</em> / forma irregular &nbsp;|&nbsp; <em>didn’t</em> + infinitivo &nbsp;|&nbsp; <em>Did</em> + sujeto + infinitivo?',
+  formulaTxt:'verbo-ed / forma irregular (did + infinitivo en negativa y pregunta)',
+  use:'Acción terminada en un momento concreto del pasado.',
+  ex:[ ['Afirmativa','She:s visited:v her grandmother last Sunday.'],
+       ['Negativa','She:s didn’t:a visit:v her grandmother last Sunday.'],
+       ['Pregunta','Did:a she:s visit:v her grandmother last Sunday?'] ],
+  rules:['Regulares: <code>+ -ed</code>; acabado en <code>-e</code>: <code>+ -d</code>; consonante + <code>y</code>: <code>-ied</code> (<code>study &rarr; studied</code>); CVC dobla (<code>stop &rarr; stopped</code>).',
+    'Irregulares (2ª columna): <code>go &rarr; went</code>, <code>see &rarr; saw</code>, <code>have &rarr; had</code>, <code>lose &rarr; lost</code>.',
+    'En negativa y pregunta, <code>did</code> ya marca el pasado: el verbo vuelve al infinitivo.',
+    'Marcadores: <em>yesterday, last week, in 2019, two days ago</em>.'],
+  errs:['<span class="x-mark">&#10007;</span> She didn’t <em>visited</em> &rarr; <span class="ok-mark">&#10003;</span> didn’t <em>visit</em>.',
+    '<span class="x-mark">&#10007;</span> Did she <em>visited</em>? &rarr; <span class="ok-mark">&#10003;</span> Did she <em>visit</em>?',
+    '<span class="x-mark">&#10007;</span> I <em>have seen</em> him yesterday &rarr; con <em>yesterday</em> va el pasado simple: <em>I saw</em>.'],
+  confuse:['pastpart','pastperf','second'] },
+
+{ id:'pastpart', n:7, name:'Past Participle', color:'#0E7C7B',
+  formula:'auxiliar (<em>have / has / had / be</em>) + participio (verbo<em>-ed</em> / 3ª columna)',
+  formulaTxt:'auxiliar + participio (verbo-ed / 3ª columna)',
+  use:'Forma verbal que nunca aparece sola: acompaña a <em>have</em> (perfectos) o a <em>be</em> (pasiva).',
+  ex:[ ['Afirmativa','I:s have:a finished:v my homework.'],
+       ['Negativa','I:s haven’t:a finished:v my homework.'],
+       ['Pregunta','Have:a you:s finished:v your homework?'] ],
+  rules:['Regulares: el participio es igual que el pasado simple (<code>finish &rarr; finished</code>).',
+    'Irregulares (3ª columna): <code>write &rarr; wrote &rarr; written</code>, <code>eat &rarr; ate &rarr; eaten</code>, <code>break &rarr; broke &rarr; broken</code>, <code>see &rarr; saw &rarr; seen</code>.',
+    'Con <code>have/has</code> forma el presente perfecto; con <code>had</code>, el pasado perfecto; con <code>be</code>, la pasiva.',
+    'El participio nunca lleva marca de persona ni de tiempo: el auxiliar la lleva.'],
+  errs:['<span class="x-mark">&#10007;</span> I have <em>finish</em> &rarr; <span class="ok-mark">&#10003;</span> I have <em>finished</em>.',
+    '<span class="x-mark">&#10007;</span> She has <em>wrote</em> &rarr; <span class="ok-mark">&#10003;</span> She has <em>written</em>.',
+    '<span class="x-mark">&#10007;</span> The window was <em>break</em> &rarr; <span class="ok-mark">&#10003;</span> was <em>broken</em>.'],
+  confuse:['pastperf','pastsimple','third'] },
+
+{ id:'pastperf', n:8, name:'Past Perfect', color:'#5B3A8E',
+  formula:'sujeto + <em>had</em> + participio',
+  formulaTxt:'had + participio',
+  use:'Acción anterior a otro momento ya pasado.',
+  ex:[ ['Afirmativa','She:s had:a finished:v her work before dinner.'],
+       ['Negativa','She:s hadn’t:a finished:v her work before dinner.'],
+       ['Pregunta','Had:a she:s finished:v her work before dinner?'] ],
+  rules:['<code>had</code> es igual para todas las personas; contracción <code>’d</code>.',
+    'Detrás siempre va el participio, nunca el infinitivo.',
+    'Marcadores frecuentes: <em>already, just, never, before, when, by the time</em>.',
+    'Se distingue del presente perfecto por el auxiliar: <code>have/has</code> = presente, <code>had</code> = pasado.'],
+  errs:['<span class="x-mark">&#10007;</span> She had <em>finish</em> &rarr; <span class="ok-mark">&#10003;</span> She had <em>finished</em>.',
+    '<span class="x-mark">&#10007;</span> She had <em>went</em> &rarr; <span class="ok-mark">&#10003;</span> She had <em>gone</em>.',
+    '<span class="x-mark">&#10007;</span> Confundir <em>She has finished</em> (presente perfecto) con <em>She had finished</em> (pasado perfecto).'],
+  confuse:['pastpart','third','pastsimple'] }
+];
+const BLOCK_BY = {}; BLOCKS.forEach(b=>BLOCK_BY[b.id]=b);
+
+/* Fórmulas incorrectas usadas como distractores en las preguntas de tipo D */
+const FAKE_FORMULAS = [
+ 'If + past perfect, would + infinitivo',
+ 'If + past simple, would have + participio',
+ 'will + verbo-ing (sin <em>be</em>)',
+ 'the + more + adjetivo + than',
+ 'had + infinitivo',
+ 'sujeto + did + verbo-ed',
+ 'have + infinitivo',
+ 'was/were + verbo-ing + than'
+];
+/* =====================================================================
+   2. BANCO DE ORACIONES (40 base, 5 por estructura)
+      Notación:  palabra:rol   ->  s sujeto | a auxiliar | v verbo principal
+                                   j adjetivo comp./superl. | k conector clave
+      Sin marca = "otro". Los signos de puntuación se escriben pegados.
+   ===================================================================== */
+const BANK = [
+/* ---- 1. Second Conditional ---- */
+{b:'second', t:'If:k I:s had:v a car, I:s would:a drive:v to work.',
+ fill:{w:'had', hint:'have', expl:'Tras <code>if</code> en el segundo condicional el verbo va en pasado simple: <em>have &rarr; had</em>.'},
+ trans:[{q:'Reescribe la oración con el RESULTADO en negativa.', accept:['if i had a car i would not drive to work'],
+   expl:'La negativa del resultado se forma con <em>would not / wouldn’t</em> + infinitivo.'}],
+ why:{q:'¿Por qué <em>would drive</em> y no <em>would drove</em>?',
+   o:['Porque después de <em>would</em> siempre va el infinitivo sin <em>to</em>.',
+      'Porque el resultado también debe ir en pasado.',
+      'Porque <em>drive</em> es un verbo irregular.',
+      'Porque <em>if</em> obliga a usar el infinitivo en toda la oración.'], c:0,
+   expl:'<em>would</em> es un modal: detrás va siempre el infinitivo sin <em>to</em>.'}},
+
+{b:'second', t:'If:k she:s lived:v in Madrid, she:s would:a visit:v the museum.',
+ err:{t:'If she lives in Madrid, she would visit the museum.', w:'lives', fix:['lived'],
+   expl:'Detrás de <code>if</code> se usa el pasado simple, no el presente.'}},
+
+{b:'second', t:'If:k we:s won:v the lottery, we:s would:a buy:v a house.',
+ fill:{w:'would', hint:'modal del resultado', expl:'El resultado del segundo condicional se forma con <code>would</code> + infinitivo.'},
+ why:{q:'¿Por qué <em>won</em> y no <em>win</em>?',
+   o:['Porque la condición va en pasado simple y <em>win</em> es irregular: win &rarr; won.',
+      'Porque después de <em>if</em> siempre se añade <em>-ed</em>.',
+      'Porque <em>won</em> es el participio de <em>win</em>.',
+      'Porque la oración habla de un hecho real del pasado.'], c:0,
+   expl:'La condición imaginaria va en pasado simple; <em>win</em> es irregular: <em>win &rarr; won</em>.'}},
+
+{b:'second', t:'If:k he:s spoke:v English, he:s would:a find:v a job.',
+ trans:[{q:'Convierte el resultado en pregunta empezando por <em>Would</em>.',
+   accept:['would he find a job if he spoke english'],
+   expl:'En la pregunta el modal <em>would</em> se coloca delante del sujeto.'}]},
+
+{b:'second', t:'If:k I:s were:v you, I:s would:a call:v her.',
+ why:{q:'¿Por qué <em>were</em> y no <em>was</em>?',
+   o:['Porque en el segundo condicional se admite <em>were</em> para todas las personas.',
+      'Porque <em>I</em> siempre lleva <em>were</em> en cualquier tiempo.',
+      'Porque <em>were</em> es el participio de <em>be</em>.',
+      'Porque detrás de <em>if</em> el verbo va en plural.'], c:0,
+   expl:'Es la forma del subjuntivo: <em>If I were you…</em> se usa para dar consejos.'},
+ clicks:[{q:'Haz clic en el CONECTOR que introduce la condición.', w:'If'}]},
+
+/* ---- 2. Third Conditional ---- */
+{b:'third', t:'If:k she:s had:a studied:v, she:s would:a have:a passed:v the exam.',
+ clicks:[{q:'Haz clic en el AUXILIAR de la cláusula condicional (la que empieza por <em>If</em>).', w:'had',
+   expl:'En la condición, <code>had</code> es el auxiliar y <em>studied</em> el participio.'},
+   {q:'Haz clic en el VERBO PRINCIPAL del resultado.', w:'passed',
+   expl:'En <em>would have passed</em>, <em>would</em> y <em>have</em> son auxiliares y <em>passed</em> es el verbo principal.'}],
+ fill:{w:'studied', hint:'study', expl:'Tras <code>had</code> va el participio: <em>study &rarr; studied</em>.'},
+ why:{q:'¿Por qué <em>would have passed</em> y no <em>would have pass</em>?',
+   o:['Porque después de <em>have</em> va siempre el participio.',
+      'Porque <em>pass</em> no existe como infinitivo.',
+      'Porque <em>would</em> exige la terminación <em>-ed</em>.',
+      'Porque el sujeto es de tercera persona.'], c:0,
+   expl:'<em>have</em> como auxiliar exige participio: <em>have + passed</em>.'}},
+
+{b:'third', t:'If:k we:s had:a left:v earlier, we:s would:a have:a caught:v the train.',
+ err:{t:'If we had leave earlier, we would have caught the train.', w:'leave', fix:['left'],
+   expl:'Tras <code>had</code> se necesita el participio: <em>leave &rarr; left</em>.'}},
+
+{b:'third', t:'If:k I:s had:a known:v the truth, I:s would:a have:a told:v you.',
+ trans:[{q:'Reescribe la oración con el RESULTADO en negativa.',
+   accept:['if i had known the truth i would not have told you'],
+   expl:'La negativa se forma con <em>would not have</em> + participio.'}]},
+
+{b:'third', t:'If:k they:s had:a asked:v me, I:s would:a have:a helped:v them.',
+ fill:{w:'have', hint:'auxiliar del resultado', expl:'El resultado del tercer condicional es <code>would have</code> + participio; <em>have</em> nunca cambia a <em>has</em>.'}},
+
+{b:'third', t:'If:k he:s had:a saved:v money, he:s would:a have:a bought:v a car.',
+ why:{q:'¿Por qué <em>had saved</em> y no <em>saved</em>?',
+   o:['Porque en el tercer condicional la condición va en past perfect: <em>had</em> + participio.',
+      'Porque <em>save</em> es un verbo irregular.',
+      'Porque detrás de <em>if</em> siempre se usa <em>had</em>.',
+      'Porque el resultado está en presente.'], c:0,
+   expl:'La condición imposible del pasado se expresa con el past perfect: <em>had saved</em>.'}},
+
+/* ---- 3. Comparatives ---- */
+{b:'comp', t:'My:s brother:s is:v taller:j than:k my sister.',
+ fill:{w:'taller', hint:'tall', expl:'Adjetivo de una sílaba: comparativo con <code>-er</code>, <em>tall &rarr; taller</em>.'},
+ why:{q:'¿Por qué <em>taller</em> y no <em>more tall</em>?',
+   o:['Porque los adjetivos de una sílaba forman el comparativo con <em>-er</em>.',
+      'Porque <em>tall</em> es un adjetivo irregular.',
+      'Porque <em>more</em> solo se usa en superlativos.',
+      'Porque el sujeto es singular.'], c:0,
+   expl:'Una sílaba &rarr; <em>-er</em>; tres o más sílabas &rarr; <em>more</em> + adjetivo.'}},
+
+{b:'comp', t:'This:s book:s is:v more:j interesting:j than:k the film.',
+ err:{t:'This book is more interesting that the film.', w:'that', fix:['than'],
+   expl:'El comparativo se cierra con <code>than</code>, no con <em>that</em>.'},
+ clicks:[{q:'Haz clic en las DOS palabras que forman el adjetivo comparativo.', w:'more interesting'}]},
+
+{b:'comp', t:'Today:s is:v worse:j than:k yesterday.',
+ why:{q:'¿Por qué <em>worse</em> y no <em>badder</em>?',
+   o:['Porque <em>bad</em> es irregular: <em>bad &rarr; worse</em>.',
+      'Porque <em>bad</em> tiene dos sílabas y necesita <em>more</em>.',
+      'Porque <em>worse</em> es en realidad un superlativo.',
+      'Porque los adjetivos acabados en <em>-d</em> no admiten <em>-er</em>.'], c:0,
+   expl:'Irregulares: <em>good &rarr; better</em>, <em>bad &rarr; worse</em>, <em>far &rarr; further</em>.'}},
+
+{b:'comp', t:'My:s new:s phone:s is:v better:j than:k my old phone.',
+ fill:{w:'better', hint:'good', expl:'<em>good</em> es irregular: el comparativo es <em>better</em>, nunca <em>gooder</em> ni <em>more good</em>.'}},
+
+{b:'comp', t:'Her:s house:s is:v further:j than:k my house.',
+ trans:[{q:'Reescribe la oración en negativa.', accept:['her house is not further than my house'],
+   expl:'Con <em>be</em> la negativa se forma añadiendo <em>not</em> al propio verbo: <em>is not / isn’t</em>.'}]},
+
+/* ---- 4. Superlatives ---- */
+{b:'sup', t:'She:s is:v the:k best:j student in the class.',
+ why:{q:'¿Por qué <em>the best</em> y no <em>the goodest</em>?',
+   o:['Porque <em>good</em> es irregular: el superlativo es <em>the best</em>.',
+      'Porque <em>good</em> solo admite <em>the most</em>.',
+      'Porque <em>best</em> es el comparativo de <em>good</em>.',
+      'Porque delante de un sustantivo no se usa <em>-est</em>.'], c:0,
+   expl:'Irregulares: <em>the best</em>, <em>the worst</em>, <em>the furthest</em>.'},
+ clicks:[{q:'Haz clic en la palabra clave que acompaña obligatoriamente al superlativo.', w:'the'}]},
+
+{b:'sup', t:'This:s is:v the:k tallest:j building in the city.',
+ fill:{w:'tallest', hint:'tall', expl:'Una sílaba: superlativo con <code>-est</code> precedido de <code>the</code>.'}},
+
+{b:'sup', t:'That:s was:v the:k worst:j film of the year.',
+ err:{t:'That was the baddest film of the year.', w:'baddest', fix:['worst'],
+   expl:'<em>bad</em> es irregular: el superlativo es <em>the worst</em>.'}},
+
+{b:'sup', t:'He:s is:v the:k most:j intelligent:j person in the group.',
+ why:{q:'¿Por qué <em>the most intelligent</em> y no <em>the intelligentest</em>?',
+   o:['Porque los adjetivos de tres o más sílabas usan <em>the most</em>.',
+      'Porque <em>intelligent</em> es un adjetivo irregular.',
+      'Porque <em>most</em> sustituye a <em>the</em>.',
+      'Porque el sustantivo <em>person</em> es contable.'], c:0,
+   expl:'Adjetivos largos: <em>the most</em> + adjetivo, sin añadir <em>-est</em>.'},
+ trans:[{q:'Reescribe la oración en negativa.', accept:['he is not the most intelligent person in the group'],
+   expl:'Con <em>be</em>, la negativa se forma con <em>is not / isn’t</em>.'}]},
+
+{b:'sup', t:'That:s shop:s is:v the:k furthest:j from my house.',
+ trans:[{q:'Convierte la oración en pregunta.', accept:['is that shop the furthest from my house'],
+   expl:'Con <em>be</em>, la pregunta se forma adelantando el verbo: <em>Is that shop…?</em>'}]},
+
+/* ---- 5. Future Continuous ---- */
+{b:'futcont', t:'I:s will:a be:a working:v at eight tomorrow.',
+ trans:[{q:'Reescribe la oración en negativa.', accept:['i will not be working at eight tomorrow'],
+   expl:'La negativa se forma con <em>will not / won’t</em> + <em>be</em> + verbo<em>-ing</em>.'}],
+ clicks:[{q:'Haz clic en las DOS palabras que forman el auxiliar.', w:'will be'}]},
+
+{b:'futcont', t:'She:s will:a be:a flying:v to Paris next week.',
+ err:{t:'She will be fly to Paris next week.', w:'fly', fix:['flying'],
+   expl:'Detrás de <code>will be</code> el verbo lleva siempre <code>-ing</code>.'}},
+
+{b:'futcont', t:'They:s will:a be:a waiting:v for us at the station.',
+ fill:{w:'waiting', hint:'wait', expl:'La fórmula es <code>will be</code> + verbo<code>-ing</code>: <em>wait &rarr; waiting</em>.'}},
+
+{b:'futcont', t:'We:s will:a be:a studying:v at ten tomorrow morning.',
+ why:{q:'¿Por qué aparece <em>be</em> entre <em>will</em> y <em>studying</em>?',
+   o:['Porque la estructura fija del future continuous es <em>will + be + verbo-ing</em>.',
+      'Porque <em>study</em> necesita un verbo auxiliar propio.',
+      'Porque <em>be</em> marca la persona del sujeto.',
+      'Porque sin <em>be</em> la oración sería pasado.'], c:0,
+   expl:'<em>will be</em> es invariable para todas las personas y siempre precede al gerundio.'}},
+
+{b:'futcont', t:'He:s will:a be:a cooking:v dinner tonight.',
+ trans:[{q:'Convierte la oración en pregunta.', accept:['will he be cooking dinner tonight'],
+   expl:'Se adelanta <em>will</em>: <em>Will he be cooking…?</em>'}]},
+
+/* ---- 6. Past Simple ---- */
+{b:'pastsimple', t:'She:s visited:v her grandmother last Sunday.',
+ trans:[{q:'Reescribe la oración en negativa.', accept:['she did not visit her grandmother last sunday'],
+   expl:'<em>did not</em> ya marca el pasado, por eso el verbo vuelve al infinitivo: <em>visit</em>.'}],
+ why:{q:'En la negativa, ¿por qué se escribe <em>didn’t visit</em> y no <em>didn’t visited</em>?',
+   o:['Porque <em>did</em> ya marca el pasado y el verbo vuelve al infinitivo.',
+      'Porque <em>visit</em> es un verbo irregular.',
+      'Porque <em>didn’t</em> solo se usa con infinitivos largos.',
+      'Porque la terminación <em>-ed</em> nunca aparece en oraciones negativas de ningún tiempo.'], c:0,
+   expl:'La marca de pasado la lleva el auxiliar: <em>did</em> + infinitivo.'}},
+
+{b:'pastsimple', t:'We:s watched:v a film yesterday.',
+ trans:[{q:'Convierte la oración en pregunta.', accept:['did we watch a film yesterday'],
+   expl:'La pregunta se forma con <em>Did</em> + sujeto + infinitivo.'}]},
+
+{b:'pastsimple', t:'He:s went:v to the beach last summer.',
+ fill:{w:'went', hint:'go', expl:'<em>go</em> es irregular: el pasado simple es <em>went</em>.'},
+ err:{t:'He goed to the beach last summer.', w:'goed', fix:['went'],
+   expl:'<em>go</em> no admite <code>-ed</code>: su pasado es <em>went</em>.'}},
+
+{b:'pastsimple', t:'They:s didn’t:a finish:v the project.',
+ why:{q:'¿Por qué <em>finish</em> aparece sin <em>-ed</em>?',
+   o:['Porque <em>didn’t</em> ya marca el pasado y el verbo va en infinitivo.',
+      'Porque <em>finish</em> es irregular.',
+      'Porque el sujeto <em>they</em> es plural.',
+      'Porque en negativa el verbo siempre pierde la <em>-h</em> final.'], c:0,
+   expl:'Solo el auxiliar lleva la marca de tiempo: <em>didn’t</em> + infinitivo.'},
+ clicks:[{q:'Haz clic en el AUXILIAR que marca el pasado.', w:'didn’t'}]},
+
+{b:'pastsimple', t:'Did:a you:s call:v your brother yesterday?',
+ fill:{w:'Did', hint:'auxiliar de pasado', expl:'La pregunta del pasado simple empieza por <code>Did</code> + sujeto + infinitivo.'}},
+
+/* ---- 7. Past Participle ---- */
+{b:'pastpart', t:'I:s have:a finished:v my homework.',
+ why:{q:'¿Por qué <em>finished</em> es aquí un participio y no un pasado simple?',
+   o:['Porque va acompañado del auxiliar <em>have</em>; el pasado simple nunca lleva auxiliar.',
+      'Porque termina en <em>-ed</em>.',
+      'Porque el sujeto es <em>I</em>.',
+      'Porque la oración no lleva expresión de tiempo.'], c:0,
+   expl:'El participio nunca aparece solo: siempre acompaña a <em>have/has/had</em> o a <em>be</em>.'}},
+
+{b:'pastpart', t:'She:s has:a written:v three books.',
+ err:{t:'She has wrote three books.', w:'wrote', fix:['written'],
+   expl:'Tras <code>has</code> va el participio (3ª columna): <em>write &rarr; wrote &rarr; written</em>.'}},
+
+{b:'pastpart', t:'They:s have:a eaten:v all the cake.',
+ fill:{w:'eaten', hint:'eat', expl:'Tras <code>have</code> va el participio: <em>eat &rarr; ate &rarr; eaten</em>.'}},
+
+{b:'pastpart', t:'The:s window:s was:a broken:v by the storm.',
+ why:{q:'¿Por qué <em>was broken</em> y no <em>was break</em>?',
+   o:['Porque la pasiva se forma con <em>be</em> + participio.',
+      'Porque <em>break</em> no puede ir detrás de <em>was</em>.',
+      'Porque el sujeto es una cosa y no una persona.',
+      'Porque <em>broken</em> es un adjetivo, no un verbo.'], c:0,
+   expl:'Voz pasiva: verbo <em>be</em> + participio (<em>break &rarr; broke &rarr; broken</em>).'}},
+
+{b:'pastpart', t:'We:s have:a never seen:v that film.',
+ fill:{w:'seen', hint:'see', expl:'Tras <code>have</code> va el participio: <em>see &rarr; saw &rarr; seen</em>.'}},
+
+/* ---- 8. Past Perfect ---- */
+{b:'pastperf', t:'She:s had:a finished:v her work before dinner.',
+ trans:[{q:'Reescribe la oración en negativa.', accept:['she had not finished her work before dinner'],
+   expl:'La negativa se forma con <em>had not / hadn’t</em> + participio.'}]},
+
+{b:'pastperf', t:'We:s had:a never visited:v that city.',
+ why:{q:'¿Qué diferencia hay entre <em>had visited</em> y <em>have visited</em>?',
+   o:['<em>had</em> sitúa la acción antes de otro momento pasado; <em>have</em> la conecta con el presente.',
+      'No hay diferencia: son intercambiables.',
+      '<em>had</em> se usa solo con sujetos en plural.',
+      '<em>have visited</em> es pasado y <em>had visited</em> es futuro.'], c:0,
+   expl:'<em>have/has</em> + participio = presente perfecto; <em>had</em> + participio = pasado perfecto.'}},
+
+{b:'pastperf', t:'He:s had:a lost:v his keys that morning.',
+ err:{t:'He had lose his keys that morning.', w:'lose', fix:['lost'],
+   expl:'Tras <code>had</code> va el participio: <em>lose &rarr; lost &rarr; lost</em>.'}},
+
+{b:'pastperf', t:'I:s had:a eaten:v before the meeting.',
+ why:{q:'¿Por qué se usa el past perfect en esta oración?',
+   o:['Porque expresa una acción anterior a otro momento del pasado.',
+      'Porque la acción todavía continúa en el presente.',
+      'Porque <em>eat</em> es un verbo irregular.',
+      'Porque hay una expresión de futuro.'], c:0,
+   expl:'El past perfect marca lo que ocurrió <em>antes</em> de otro punto del pasado.'}},
+
+{b:'pastperf', t:'They:s had:a left:v the house at seven.',
+ fill:{w:'left', hint:'leave', expl:'Tras <code>had</code> va el participio: <em>leave &rarr; left &rarr; left</em>.'},
+ clicks:[{q:'Haz clic en el AUXILIAR del pasado perfecto.', w:'had'}]}
+];
+/* =====================================================================
+   3. MOTOR: análisis de oraciones y generación de preguntas
+   ===================================================================== */
+const TYPE_NAME = {A:'Identificar la estructura', B:'Señalar componentes', C:'Etiquetado completo',
+  D:'Análisis de la fórmula', E:'Completar hueco', F:'Detectar y corregir', G:'Transformación',
+  H:'Ordenar palabras', I:'Justificar la regla'};
+const TYPE_ORDER = ['A','D','B','C','E','F','G','H','I'];
+
+const $  = (s,c)=> (c||document).querySelector(s);
+const $$ = (s,c)=> Array.from((c||document).querySelectorAll(s));
+const esc = t => String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const rnd = n => Math.floor(Math.random()*n);
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=rnd(i+1); [a[i],a[j]]=[a[j],a[i]];} return a; }
+function pickN(a,n){ return shuffle(a).slice(0,n); }
+
+function parseSentence(t){
+  return t.split(/\s+/).filter(Boolean).map((tok,i)=>{
+    const m = tok.match(/:([savjkx])/);
+    const role = m ? m[1] : 'x';
+    const disp = tok.replace(/:([savjkx])/,'');
+    const word = disp.replace(/^[^A-Za-z0-9’']+/,'').replace(/[^A-Za-z0-9’']+$/,'');
+    const at = disp.indexOf(word);
+    return {i:i, disp:disp, word:word, role:role,
+      pre: at>0 ? disp.slice(0,at) : '',
+      post: at>=0 ? disp.slice(at+word.length) : ''};
+  });
+}
+const nw = w => String(w).toLowerCase().replace(/[’‘`´]/g,"'");
+
+function findRun(toks, phrase){
+  const ws = String(phrase).toLowerCase().split(/\s+/);
+  for(let i=0;i<=toks.length-ws.length;i++){
+    let ok = true;
+    for(let j=0;j<ws.length;j++){ if(nw(toks[i+j].word)!==nw(ws[j])){ ok=false; break; } }
+    if(ok) return ws.map((_,j)=>i+j);
+  }
+  return [];
+}
+function roleGroups(toks, role){
+  const g=[]; let cur=null;
+  toks.forEach(t=>{
+    if(t.role===role){ if(cur && cur[cur.length-1]===t.i-1) cur.push(t.i); else { cur=[t.i]; g.push(cur); } }
+    else cur=null;
+  });
+  return g;
+}
+function normText(t){
+  let x = String(t).toLowerCase().replace(/[’‘`´]/g,"'").trim();
+  x = x.replace(/\bwon't\b/g,'will not').replace(/\bcan't\b/g,'can not').replace(/\bshan't\b/g,'shall not');
+  x = x.replace(/\bcannot\b/g,'can not');
+  x = x.replace(/n't\b/g,' not');
+  x = x.replace(/'ll\b/g,' will').replace(/'ve\b/g,' have').replace(/'re\b/g,' are').replace(/'m\b/g,' am');
+  x = x.replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+  return x;
+}
+const matchText = (v, accept) => accept.some(a => normText(a)===normText(v));
+
+/* ---- Oraciones procesadas ---- */
+const SENT = BANK.map((s,idx)=>{
+  const toks = parseSentence(s.t);
+  const o = Object.assign({}, s);
+  o.sid = idx; o.toks = toks; o.plain = toks.map(t=>t.disp).join(' ');
+  return o;
+});
+
+/* ---- Generación de preguntas ---- */
+const ROLE_Q = {
+  s:{one:'Haz clic en el SUJETO de la oración.', many:'Haz clic en las {n} palabras que forman el SUJETO.',
+     multi:'Esta oración tiene varios sujetos: haz clic en cualquiera de ellos.', nm:'sujeto'},
+  a:{one:'Haz clic en el AUXILIAR o modal.', many:'Haz clic en las {n} palabras que forman el AUXILIAR.',
+     multi:'Esta oración tiene varios auxiliares: haz clic en cualquiera de ellos.', nm:'auxiliar'},
+  v:{one:'Haz clic en el VERBO PRINCIPAL.', many:'Haz clic en las {n} palabras del VERBO PRINCIPAL.',
+     multi:'Esta oración tiene varios verbos principales: haz clic en cualquiera de ellos.', nm:'verbo principal'},
+  j:{one:'Haz clic en el ADJETIVO comparativo o superlativo.', many:'Haz clic en las {n} palabras que forman el ADJETIVO.',
+     multi:'Haz clic en cualquiera de los adjetivos comparativos o superlativos.', nm:'adjetivo'},
+  k:{one:'Haz clic en el CONECTOR clave de la estructura.', many:'Haz clic en las {n} palabras clave.',
+     multi:'Haz clic en cualquiera de los conectores clave.', nm:'conector clave'}
+};
+const HINT_BY_TYPE = {
+  A:'Busca primero el auxiliar: <em>if</em>, <em>would</em>, <em>had</em>, <em>will be</em> o <em>than / the</em> te dicen casi siempre de qué estructura se trata.',
+  B:'Recuerda: el auxiliar acompaña al verbo; el verbo principal es el que lleva el significado.',
+  C:'Empieza por el verbo principal y el auxiliar; lo que no encaje en ninguna etiqueta es «Otro».',
+  D:'Comprueba pieza por pieza: ¿aparece <em>had</em>? ¿aparece <em>would</em>? ¿el verbo lleva <em>-ing</em>, <em>-ed</em> o es la 3ª columna?',
+  E:'Fíjate en la palabra que va justo antes del hueco: ella decide la forma del verbo.',
+  F:'Hay exactamente una palabra incorrecta. Revisa la forma del verbo y los conectores.',
+  G:'Recuerda dónde se coloca la negación y qué auxiliar necesita la pregunta.',
+  H:'Empieza por la palabra que lleva mayúscula y termina por la que lleva el punto.',
+  I:'Piensa en qué palabra lleva la marca de tiempo de la oración.'
+};
+
+function mkQ(s, type, o){
+  const b = BLOCK_BY[s.b];
+  return Object.assign({ key:s.sid+'-'+type+'-'+(o.sub||0), type:type, sid:s.sid, block:s.b,
+    blockName:b.name, hint:HINT_BY_TYPE[type] }, o);
+}
+
+function genQuestions(s){
+  const b = BLOCK_BY[s.b], toks = s.toks, qs = [];
+
+  /* A — identificar la estructura */
+  const optA = shuffle([s.b].concat(pickN(b.confuse,3))).slice(0,4);
+  if(optA.indexOf(s.b)<0){ optA[0]=s.b; }
+  const oA = shuffle(optA);
+  qs.push(mkQ(s,'A',{ kind:'mc', prompt:'¿A qué estructura pertenece esta oración?',
+    opts:oA.map(id=>BLOCK_BY[id].name), correct:oA.indexOf(s.b),
+    expl:'<b>'+b.name+'</b>: '+b.formula+'. '+b.use }));
+
+  /* D — análisis de la fórmula */
+  const others = BLOCKS.filter(x=>x.id!==s.b).map(x=>x.formulaTxt);
+  const dOpts = shuffle([b.formulaTxt].concat(pickN(others,2)).concat(pickN(FAKE_FORMULAS,1)));
+  qs.push(mkQ(s,'D',{ kind:'mc', prompt:'¿Cuál de estas fórmulas describe la oración?',
+    opts:dOpts, correct:dOpts.indexOf(b.formulaTxt),
+    expl:'La fórmula de <b>'+b.name+'</b> es: '+b.formula+'.' }));
+
+  /* B — señalar componentes por clic */
+  ['s','a','v','j','k'].forEach((r,ri)=>{
+    const g = roleGroups(toks,r); if(!g.length) return;
+    let targets, needAll, prompt;
+    if(g.length===1){ targets=g[0]; needAll=g[0].length>1;
+      prompt = needAll ? ROLE_Q[r].many.replace('{n}',g[0].length) : ROLE_Q[r].one; }
+    else { targets=[].concat.apply([],g); needAll=false; prompt=ROLE_Q[r].multi; }
+    const words = [].concat.apply([],g).map(i=>'<em>'+esc(toks[i].word)+'</em>').join(', ');
+    qs.push(mkQ(s,'B',{ kind:'click', sub:ri, prompt:prompt, targets:targets, needAll:needAll,
+      expl:'El '+ROLE_Q[r].nm+' de esta oración: '+words+'.' }));
+  });
+  (s.clicks||[]).forEach((c,ci)=>{
+    const t = findRun(toks,c.w); if(!t.length) return;
+    qs.push(mkQ(s,'B',{ kind:'click', sub:10+ci, prompt:c.q, targets:t, needAll:t.length>1,
+      expl:c.expl || 'Respuesta: <em>'+esc(c.w)+'</em>.' }));
+  });
+
+  /* C — etiquetado completo */
+  if(toks.length<=10){
+    const roles = ROLE_ORDER.filter(r=> r==='x' || toks.some(t=>t.role===r));
+    qs.push(mkQ(s,'C',{ kind:'label', prompt:'Etiqueta cada palabra de la oración. Elige una etiqueta y toca las palabras que le corresponden.',
+      labels:roles, expl:'Cada componente en su color: así se reconoce la estructura completa.' }));
+  }
+
+  /* H — ordenar palabras */
+  if(toks.length<=9){
+    qs.push(mkQ(s,'H',{ kind:'scramble', prompt:'Ordena las palabras para formar la oración correcta.',
+      expl:'Orden correcto: <em>'+esc(s.plain)+'</em>' }));
+  }
+
+  /* E — completar hueco */
+  if(s.fill){
+    const idx = findRun(toks, s.fill.w)[0];
+    if(idx!==undefined) qs.push(mkQ(s,'E',{ kind:'text', blankAt:idx,
+      prompt:'Completa el hueco con la forma correcta'+(s.fill.hint?' de <em>'+esc(s.fill.hint)+'</em>':'')+'.',
+      accept:(s.fill.accept||[toks[idx].word]), expl:s.fill.expl,
+      hint:'Base: <em>'+esc(s.fill.hint||'')+'</em>. '+HINT_BY_TYPE.E }));
+  }
+
+  /* F — detectar y corregir el error */
+  if(s.err){
+    const wt = parseSentence(s.err.t);
+    const bad = wt.findIndex(t=>nw(t.word)===nw(s.err.w));
+    if(bad>=0) qs.push(mkQ(s,'F',{ kind:'errfix', wrongToks:wt, badIdx:bad, accept:s.err.fix,
+      prompt:'Esta oración tiene un error. Haz clic en la palabra incorrecta y escribe la corrección.',
+      expl:s.err.expl }));
+  }
+
+  /* G — transformación */
+  (s.trans||[]).forEach((tr,ti)=>{
+    qs.push(mkQ(s,'G',{ kind:'text', sub:ti, prompt:tr.q, accept:tr.accept, expl:tr.expl, whole:true }));
+  });
+
+  /* I — justificación de la regla */
+  if(s.why){
+    const pairs = s.why.o.map((txt,i)=>({txt:txt, ok:i===s.why.c}));
+    const sh = shuffle(pairs);
+    qs.push(mkQ(s,'I',{ kind:'mc', prompt:s.why.q, opts:sh.map(p=>p.txt),
+      correct:sh.findIndex(p=>p.ok), expl:s.why.expl }));
+  }
+  return qs;
+}
+/* =====================================================================
+   4. ESTADO Y ESTADÍSTICAS
+   ===================================================================== */
+const S = { stats:{topic:{}, type:{}}, log:[], exams:[] };
+function bump(o,k,ok){ o[k]=o[k]||{a:0,c:0}; o[k].a++; if(ok) o[k].c++; }
+function record(q, ok, given){
+  bump(S.stats.topic, q.block, ok);
+  bump(S.stats.type, q.type, ok);
+  S.log.push({sid:q.sid, type:q.type, block:q.block, ok:ok, prompt:q.prompt,
+              expl:q.expl, given:given||'', good:correctAnswerHTML(q)});
+  if(S.log.length>400) S.log.shift();
+}
+function pct(o){ return o && o.a ? Math.round(100*o.c/o.a) : null; }
+function meterColor(p){ return p>=80 ? 'var(--vp)' : p>=55 ? 'var(--suj)' : 'var(--key)'; }
+
+function correctAnswerHTML(q){
+  const s = SENT[q.sid];
+  switch(q.kind){
+    case 'mc':      return q.opts[q.correct];
+    case 'click':   return q.targets.map(i=>'<em>'+esc(s.toks[i].word)+'</em>').join(' + ');
+    case 'label':   return 'ver la oración etiquetada';
+    case 'text':    return '<em>'+esc(q.accept[0])+'</em>';
+    case 'errfix':  return '<em>'+esc(q.wrongToks[q.badIdx].word)+'</em> &rarr; <em>'+esc(q.accept[0])+'</em>';
+    case 'scramble':return '<em>'+esc(s.plain)+'</em>';
+  }
+  return '';
+}
+
+/* =====================================================================
+   5. RENDERIZADO DE ORACIONES
+   ===================================================================== */
+function sentStatic(toks, blankAt){
+  return toks.map(t=>{
+    if(blankAt===t.i) return esc(t.pre)+'<span class="w r-v" style="letter-spacing:.1em">______</span>'+esc(t.post);
+    return esc(t.pre)+'<span class="w">'+esc(t.word)+'</span>'+esc(t.post);
+  }).join(' ');
+}
+function sentClick(toks){
+  return toks.map(t=>'<button type="button" class="w clk" data-i="'+t.i+'">'+esc(t.disp)+'</button>').join(' ');
+}
+function sentReveal(toks){
+  return toks.map(t=>{
+    const tag = t.role==='x' ? '&nbsp;' : ROLE_SHORT[t.role];
+    return '<span class="wwrap"><span class="w'+(t.role==='x'?'':' r-'+t.role)+'">'+esc(t.disp)+
+           '</span><span class="wtag t-'+t.role+'">'+tag+'</span></span>';
+  }).join(' ');
+}
+function stimBox(inner, label){
+  return '<div class="stim"><div class="stim-lab">'+(label||'Oración')+'</div><div class="sent">'+inner+'</div></div>';
+}
+
+/* =====================================================================
+   6. RUNNER DE PREGUNTAS
+   ===================================================================== */
+function Runner(cfg){
+  this.items = cfg.items; this.host = cfg.host; this.mode = cfg.mode;
+  this.onFinish = cfg.onFinish; this.allowHint = !!cfg.allowHint;
+  this.i = 0; this.st = this.items.map(()=>({}));
+  this.results = [];
+}
+Runner.prototype.cur = function(){ return this.items[this.i]; };
+Runner.prototype.go = function(n){
+  if(n<0 || n>=this.items.length) return;
+  this.i = n; this.render();
+  this.host.scrollIntoView({block:'start', behavior:'smooth'});
+};
+Runner.prototype.render = function(){
+  const it = this.cur(), w = this.st[this.i];
+  const total = this.items.length;
+  const qNums = this.items.filter(x=>x.q).length;
+  const qIdx  = this.items.slice(0,this.i+1).filter(x=>x.q).length;
+  let h = '<div class="card">';
+  h += '<div class="pbar"><i style="width:'+Math.round(100*(this.i)/total)+'%"></i></div>';
+
+  if(it.summary!==undefined){
+    const s = SENT[it.summary];
+    h += '<div class="qhead"><span class="chip type">Resumen de la oración</span><span class="chip">'+
+         esc(BLOCK_BY[s.b].name)+'</span></div>';
+    h += stimBox(sentReveal(s.toks),'Oración completa etiquetada');
+    h += '<p class="muted" style="margin:0 0 4px"><b>Fórmula:</b> '+BLOCK_BY[s.b].formula+'</p>';
+    h += '<p class="small" style="margin:0">'+BLOCK_BY[s.b].use+'</p>';
+    h += '<div class="nav"><button class="btn ghost sm" data-act="prev">&larr; Anterior</button>'+
+         '<button class="btn" data-act="next" id="mainBtn">'+
+         (this.i===total-1?'Terminar':'Siguiente oración &rarr;')+'</button></div>';
+    h += '</div>';
+    this.host.innerHTML = h; this.wire(); return;
+  }
+
+  const q = it.q, s = SENT[q.sid];
+  h += '<div class="qhead"><div class="row" style="gap:7px">'+
+       '<span class="chip type">Tipo '+q.type+' · '+TYPE_NAME[q.type]+'</span>'+
+       (this.mode==='exam' ? '<span class="chip">Pregunta '+qIdx+' de '+qNums+'</span>'
+                           : '<span class="chip">'+esc(q.blockName)+'</span>')+
+       '</div>'+(this.mode==='exam'?'<span class="timer" id="examTimer">--:--</span>':'')+'</div>';
+
+  /* --- estímulo --- */
+  if(q.kind==='errfix')       h += stimBox(sentClick(q.wrongToks),'Oración con un error');
+  else if(q.kind==='click')   h += stimBox(sentClick(s.toks),'Oración');
+  else if(q.kind==='label')   h += '';
+  else if(q.kind==='scramble')h += '';
+  else                        h += stimBox(sentStatic(s.toks, q.blankAt),'Oración');
+
+  h += '<div class="qtext">'+q.prompt+'</div><div id="qbody">';
+
+  if(q.kind==='mc'){
+    h += '<div class="opts" role="group">';
+    q.opts.forEach((o,i)=>{ h += '<button type="button" class="opt'+(w.sel===i?' sel':'')+'" data-opt="'+i+'">'+
+      '<kbd>'+(i+1)+'</kbd><span>'+o+'</span></button>'; });
+    h += '</div>';
+  }
+  else if(q.kind==='label'){
+    h += '<div class="chips" role="group" aria-label="Etiquetas">';
+    q.labels.forEach(r=>{ h += '<button type="button" class="lchip'+(w.pick===r?' on':'')+'" data-r="'+r+'">'+ROLE_NAME[r]+'</button>'; });
+    h += '</div><div class="tokrow">';
+    s.toks.forEach(t=>{
+      const a = (w.lab||{})[t.i];
+      h += '<div class="tok"><button type="button" class="w clk'+(a?' r-'+a:'')+'" data-i="'+t.i+'">'+esc(t.disp)+'</button>'+
+           '<span class="asg t-'+(a||'x')+'">'+(a?ROLE_SHORT[a]:'—')+'</span></div>';
+    });
+    h += '</div>';
+  }
+  else if(q.kind==='scramble'){
+    const order = w.order||[];
+    const pool  = shuffleStable(q, s).filter(i=>order.indexOf(i)<0);
+    h += '<div class="stim" style="min-height:64px"><div class="stim-lab">Tu oración</div><div class="sent" id="built">'+
+      (order.length? order.map(i=>'<button type="button" class="w clk sel" data-rm="'+i+'">'+esc(s.toks[i].disp)+'</button>').join(' ')
+                   : '<span class="small">Toca las palabras en orden</span>')+'</div></div>';
+    h += '<div class="tokrow" id="pool">'+
+      pool.map(i=>'<button type="button" class="w clk" data-add="'+i+'">'+esc(s.toks[i].disp)+'</button>').join('')+'</div>';
+  }
+  else if(q.kind==='text'){
+    h += '<label class="fl" for="txtIn">Tu respuesta'+(q.whole?' (oración completa)':'')+'</label>'+
+         '<input type="text" id="txtIn" autocomplete="off" autocapitalize="off" spellcheck="false" value="'+
+         esc(w.val||'')+'" placeholder="'+(q.whole?'Escribe la oración completa':'Escribe la palabra')+'">';
+  }
+  else if(q.kind==='errfix'){
+    h += '<label class="fl" for="txtIn">Corrección de la palabra marcada</label>'+
+         '<input type="text" id="txtIn" autocomplete="off" autocapitalize="off" spellcheck="false" value="'+
+         esc(w.val||'')+'" placeholder="Escribe la palabra correcta">';
+  }
+  h += '</div><div id="qfb"></div>';
+
+  h += '<div class="nav"><div class="row">'+
+       (this.i>0?'<button class="btn ghost sm" data-act="prev">&larr;</button>':'')+
+       (this.allowHint && !w.done ? '<button class="btn ghost sm" data-act="hint">Pista</button>':'')+
+       '</div><div class="row">'+
+       (w.done ? '<button class="btn" data-act="next" id="mainBtn">'+(this.i===total-1?'Terminar':'Siguiente &rarr;')+'</button>'
+               : '<button class="btn" data-act="check" id="mainBtn">Comprobar</button>'+
+                 (this.mode==='exam'?'<button class="btn ghost sm" data-act="skip">Saltar</button>':''))+
+       '</div></div></div>';
+
+  this.host.innerHTML = h;
+  if(this.mode==='exam'){ const tl=$('#examTimer',this.host); if(tl){ tl.textContent=fmtTime(Math.max(0,examLeft)); tl.classList.toggle('low', examLeft<=120); } }
+  if(w.done) this.paint(w);
+  if(w.hint) $('#qbody').insertAdjacentHTML('afterend','<div class="hintbox">'+q.hint+'</div>');
+  this.wire();
+  const inp = $('#txtIn'); if(inp && !w.done) setTimeout(()=>inp.focus(),40);
+};
+/* orden barajado estable por pregunta */
+const SCRAMBLE_CACHE = {};
+function shuffleStable(q, s){
+  if(!SCRAMBLE_CACHE[q.key]) SCRAMBLE_CACHE[q.key] = shuffle(s.toks.map(t=>t.i));
+  return SCRAMBLE_CACHE[q.key];
+}
+
+Runner.prototype.wire = function(){
+  const self = this, host = this.host, it = this.cur(), w = this.st[this.i];
+  host.onclick = function(ev){
+    const t = ev.target.closest('[data-act],[data-opt],[data-i],[data-add],[data-rm],[data-r]');
+    if(!t) return;
+    const act = t.getAttribute('data-act');
+    if(act){
+      if(act==='prev') self.go(self.i-1);
+      else if(act==='next'){ if(self.i===self.items.length-1) self.finish(); else self.go(self.i+1); }
+      else if(act==='check') self.check();
+      else if(act==='skip'){ self.commit(false,'(sin responder)'); }
+      else if(act==='hint'){ w.hint=true; self.render(); }
+      return;
+    }
+    if(w.done) return;
+    const q = it.q; if(!q) return;
+    if(t.hasAttribute('data-opt')){ w.sel = +t.getAttribute('data-opt'); self.render(); }
+    else if(t.hasAttribute('data-r')){ w.pick = t.getAttribute('data-r'); self.render(); }
+    else if(t.hasAttribute('data-add')){ w.order=(w.order||[]).concat([+t.getAttribute('data-add')]); self.render(); }
+    else if(t.hasAttribute('data-rm')){ const v=+t.getAttribute('data-rm'); w.order=(w.order||[]).filter(x=>x!==v); self.render(); }
+    else if(t.hasAttribute('data-i')){
+      const i = +t.getAttribute('data-i');
+      if(q.kind==='label'){ if(!w.pick) return; w.lab=w.lab||{}; w.lab[i]=w.pick; self.render(); }
+      else if(q.kind==='errfix'){ w.bad=i; self.render(); const b=$('[data-i="'+i+'"]',host); if(b) b.classList.add('sel'); }
+      else { w.clicks = w.clicks||[]; const p=w.clicks.indexOf(i);
+             if(p<0) w.clicks.push(i); else w.clicks.splice(p,1); self.render(); }
+    }
+  };
+  /* repintar selecciones que el HTML no lleva incrustadas */
+  if(!w.done && it.q){
+    (w.clicks||[]).forEach(i=>{ const b=$('[data-i="'+i+'"]',host); if(b) b.classList.add('sel'); });
+    if(w.bad!==undefined){ const b=$('[data-i="'+w.bad+'"]',host); if(b) b.classList.add('sel'); }
+  }
+  const inp = $('#txtIn',host);
+  if(inp) inp.oninput = function(){ w.val = this.value; };
+};
+
+Runner.prototype.evaluate = function(){
+  const q = this.cur().q, w = this.st[this.i], s = SENT[q.sid];
+  switch(q.kind){
+    case 'mc': return w.sel===undefined ? null : {ok:w.sel===q.correct, given:q.opts[w.sel]};
+    case 'click': {
+      const c = w.clicks||[]; if(!c.length) return null;
+      const inAll = c.every(i=>q.targets.indexOf(i)>=0);
+      const ok = inAll && (q.needAll ? c.length===q.targets.length : true);
+      return {ok:ok, given:c.map(i=>s.toks[i].word).join(' + ')};
+    }
+    case 'label': {
+      const l = w.lab||{}; if(Object.keys(l).length < s.toks.length) return null;
+      const ok = s.toks.every(t=> l[t.i]===t.role);
+      return {ok:ok, given:'etiquetado propio'};
+    }
+    case 'text': { const v=(w.val||'').trim(); if(!v) return null; return {ok:matchText(v,q.accept), given:v}; }
+    case 'errfix': {
+      const v=(w.val||'').trim(); if(w.bad===undefined || !v) return null;
+      return {ok: w.bad===q.badIdx && matchText(v,q.accept), given:(q.wrongToks[w.bad]||{}).word+' → '+v};
+    }
+    case 'scramble': {
+      const o=w.order||[]; if(o.length<s.toks.length) return null;
+      return {ok:o.every((v,i)=>v===i), given:o.map(i=>s.toks[i].disp).join(' ')};
+    }
+  }
+  return null;
+};
+Runner.prototype.check = function(){
+  const r = this.evaluate();
+  if(!r){ this.flash('Responde a la pregunta antes de comprobar.'); return; }
+  this.commit(r.ok, r.given);
+};
+Runner.prototype.flash = function(msg){
+  const fb = $('#qfb', this.host); if(!fb) return;
+  fb.innerHTML = '<div class="fb bad" role="alert">'+msg+'</div>';
+};
+Runner.prototype.commit = function(ok, given){
+  const w = this.st[this.i], q = this.cur().q;
+  w.done = true; w.ok = ok; w.given = given;
+  record(q, ok, given);
+  this.results.push({q:q, ok:ok, given:given});
+  this.render();
+  const btn = $('#mainBtn', this.host); if(btn) btn.focus();
+};
+Runner.prototype.paint = function(w){
+  const q = this.cur().q, s = SENT[q.sid], host = this.host;
+  $$('.opt,.w.clk,.lchip,#txtIn',host).forEach(el=>{ if(el.tagName==='BUTTON'||el.tagName==='INPUT') el.disabled=true; });
+  if(q.kind==='mc'){
+    $$('.opt',host).forEach((el,i)=>{ el.classList.remove('sel');
+      if(i===q.correct) el.classList.add('good'); else if(i===w.sel) el.classList.add('wrong'); });
+  }
+  if(q.kind==='click'){
+    $$('.w.clk',host).forEach(el=>{ const i=+el.getAttribute('data-i');
+      const isT=q.targets.indexOf(i)>=0, was=(w.clicks||[]).indexOf(i)>=0;
+      el.classList.remove('sel');
+      if(was&&isT) el.classList.add('hit'); else if(was&&!isT) el.classList.add('miss'); else if(isT) el.classList.add('shown'); });
+  }
+  if(q.kind==='label'){
+    $$('.w.clk',host).forEach(el=>{ const i=+el.getAttribute('data-i');
+      const good=(w.lab||{})[i]===s.toks[i].role;
+      el.classList.add(good?'hit':'miss'); });
+  }
+  if(q.kind==='errfix'){
+    $$('.w.clk',host).forEach(el=>{ const i=+el.getAttribute('data-i');
+      el.classList.remove('sel');
+      if(i===q.badIdx) el.classList.add('hit'); else if(i===w.bad) el.classList.add('miss'); });
+  }
+  const fb = $('#qfb',host);
+  fb.innerHTML = '<div class="fb '+(w.ok?'good':'bad')+'" role="status">'+
+    '<b>'+(w.ok?'Correcto':'Incorrecto')+'</b>'+
+    (w.ok?'':'<span>Respuesta correcta: '+correctAnswerHTML(q)+'</span>')+
+    '<span class="why">'+q.expl+'</span></div>';
+  if(q.kind==='label' && !w.ok){
+    fb.insertAdjacentHTML('beforeend','<div class="stim" style="margin-top:12px"><div class="stim-lab">Etiquetado correcto</div><div class="sent rev">'+sentReveal(s.toks)+'</div></div>');
+  }
+};
+Runner.prototype.finish = function(){ if(this.onFinish) this.onFinish(this.results); };
+/* =====================================================================
+   7. VISTA: REPASO
+   ===================================================================== */
+function renderRepaso(){
+  $('#repasoGrid').innerHTML = BLOCKS.map(b=>{
+    const ex = b.ex.map(e=>'<div class="ex-row"><div class="ex-tag">'+e[0]+'</div><div class="ex-s">'+
+      sentReveal(parseSentence(e[1]))+'</div></div>').join('');
+    return '<article class="bcard"><h3><span class="num">'+b.n+'</span>'+esc(b.name)+'</h3>'+
+      '<div class="formula">'+b.formula+'</div>'+
+      '<div class="rules" style="padding-bottom:0"><b style="color:var(--ink)">Uso:</b> '+b.use+'</div>'+
+      '<div class="ex">'+ex+'</div>'+
+      '<div class="rules"><b style="color:var(--ink)">Reglas y ortografía</b><ul>'+
+        b.rules.map(r=>'<li>'+r+'</li>').join('')+'</ul></div>'+
+      '<details class="errs"><summary>Errores frecuentes</summary><ul>'+
+        b.errs.map(r=>'<li>'+r+'</li>').join('')+'</ul></details></article>';
+  }).join('');
+}
+
+/* =====================================================================
+   8. VISTA: PRÁCTICA
+   ===================================================================== */
+let practice = null;
+function buildPracticeItems(topic){
+  let pool = SENT.filter(s=> topic==='all' || s.b===topic);
+  pool = shuffle(pool).slice(0, topic==='all' ? 12 : pool.length);
+  const items = [];
+  pool.forEach(s=>{
+    const qs   = genQuestions(s);
+    const pri  = qs.filter(q=>'ABCD'.indexOf(q.type)>=0);
+    const rest = qs.filter(q=>'ABCD'.indexOf(q.type)<0);
+    const n    = 2 + rnd(4);
+    let sel = shuffle(pri).slice(0, Math.max(2, Math.min(pri.length, rest.length? n-1 : n)));
+    const need = n - sel.length;
+    if(need>0) sel = sel.concat(shuffle(rest).slice(0,need));
+    sel.sort((a,b)=> TYPE_ORDER.indexOf(a.type)-TYPE_ORDER.indexOf(b.type));
+    sel.forEach(q=>items.push({q:q}));
+    items.push({summary:s.sid});
+  });
+  return items;
+}
+function startPractice(){
+  Object.keys(SCRAMBLE_CACHE).forEach(k=>delete SCRAMBLE_CACHE[k]);
+  const topic = $('#pTopic').value;
+  const items = buildPracticeItems(topic);
+  $('#pSetup').hidden = true; $('#pRun').hidden = false;
+  practice = new Runner({items:items, host:$('#pRun'), mode:'practice', allowHint:true,
+    onFinish:function(res){
+      const ok = res.filter(r=>r.ok).length;
+      $('#pRun').innerHTML = '<div class="card"><h2 style="font-size:1.15rem">Ronda terminada</h2>'+
+        '<div class="big-score"><b style="color:'+meterColor(Math.round(100*ok/Math.max(1,res.length)))+'">'+
+        Math.round(100*ok/Math.max(1,res.length))+'%</b><span>'+ok+' de '+res.length+' preguntas correctas</span></div>'+
+        '<div class="row" style="justify-content:center"><button class="btn" id="pAgain">Otra ronda</button>'+
+        '<button class="btn ghost" id="pStats">Ver progreso</button></div></div>';
+      $('#pAgain').onclick = ()=>{ $('#pSetup').hidden=false; $('#pRun').hidden=true; $('#pRun').innerHTML=''; practice=null; };
+      $('#pStats').onclick = ()=> selectTab('progreso');
+    }});
+  practice.render();
+}
+
+/* =====================================================================
+   9. VISTA: EXAMEN SIMULADO
+   ===================================================================== */
+let exam = null, examTimer = null, examLeft = 0;
+const EXAM_SECONDS = 25*60;
+function buildExamItems(){
+  const byType = {};
+  SENT.forEach(s=> genQuestions(s).forEach(q=>{ (byType[q.type]=byType[q.type]||[]).push(q); }));
+  Object.keys(byType).forEach(k=> byType[k]=shuffle(byType[k]));
+  const types = shuffle(Object.keys(byType));
+  const picked = []; let guard = 0;
+  while(picked.length<30 && guard++<300){
+    for(let i=0;i<types.length && picked.length<30;i++){
+      const arr = byType[types[i]];
+      if(arr && arr.length){
+        const q = arr.shift();
+        if(picked.filter(p=>p.sid===q.sid).length<2 || guard>60) picked.push(q);
+      }
+    }
+  }
+  return shuffle(picked).slice(0,30).map(q=>({q:q}));
+}
+function fmtTime(s){ const m=Math.floor(s/60), r=s%60; return (m<10?'0':'')+m+':'+(r<10?'0':'')+r; }
+function tickExam(){
+  examLeft--;
+  const el = $('#examTimer');
+  if(el){ el.textContent = fmtTime(Math.max(0,examLeft)); el.classList.toggle('low', examLeft<=120); }
+  if(examLeft<=0){ clearInterval(examTimer); examTimer=null; finishExam(true); }
+}
+function startExam(){
+  Object.keys(SCRAMBLE_CACHE).forEach(k=>delete SCRAMBLE_CACHE[k]);
+  $('#eSetup').hidden = true; $('#eResult').hidden = true; $('#eResult').innerHTML='';
+  $('#eRun').hidden = false;
+  examLeft = EXAM_SECONDS;
+  exam = new Runner({items:buildExamItems(), host:$('#eRun'), mode:'exam', allowHint:false,
+    onFinish:function(){ finishExam(false); }});
+  exam.render();
+  if(examTimer) clearInterval(examTimer);
+  examTimer = setInterval(tickExam,1000);
+  const el=$('#examTimer'); if(el) el.textContent = fmtTime(examLeft);
+}
+function finishExam(byTime){
+  if(examTimer){ clearInterval(examTimer); examTimer=null; }
+  if(!exam) return;
+  const res = exam.results.slice();
+  const answered = res.length, totalQ = exam.items.length;
+  exam.items.forEach((it,i)=>{ if(!exam.st[i].done){ record(it.q,false,'(sin responder)'); res.push({q:it.q, ok:false, given:'(sin responder)'}); } });
+  const ok = res.filter(r=>r.ok).length;
+  const score = Math.round(100*ok/res.length);
+  const byT = {}, byK = {};
+  res.forEach(r=>{ bump(byT,r.q.block,r.ok); bump(byK,r.q.type,r.ok); });
+  let h = '<div class="card"><h2 style="font-size:1.15rem">Resultado del examen simulado</h2>'+
+    (byTime?'<p class="muted" style="margin:6px 0 0">Se acabó el tiempo. Las preguntas sin responder cuentan como falladas.</p>':'')+
+    '<div class="big-score"><b style="color:'+meterColor(score)+'">'+score+'%</b>'+
+    '<span>'+ok+' aciertos de '+res.length+' preguntas · '+answered+' respondidas · tiempo empleado '+
+    fmtTime(EXAM_SECONDS-Math.max(0,examLeft))+'</span></div></div>';
+
+  h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Desglose por tema</h3><div class="stat-grid">'+
+    BLOCKS.filter(b=>byT[b.id]).map(b=>statRow(b.name, byT[b.id])).join('')+'</div></div>';
+  h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Desglose por tipo de pregunta</h3><div class="stat-grid">'+
+    TYPE_ORDER.filter(t=>byK[t]).map(t=>statRow('Tipo '+t+' · '+TYPE_NAME[t], byK[t])).join('')+'</div></div>';
+
+  const errs = res.filter(r=>!r.ok);
+  h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Errores para repasar ('+errs.length+')</h3>';
+  h += errs.length ? '<div class="errlist">'+errs.map(r=>{
+      const s = SENT[r.q.sid];
+      return '<div class="erritem"><div class="q">'+r.q.prompt+'</div>'+
+        '<div class="a small" style="margin-top:4px"><em>'+esc(s.plain)+'</em> · '+esc(BLOCK_BY[s.b].name)+'</div>'+
+        '<div class="a">Tu respuesta: <span style="color:var(--bad)">'+esc(r.given||'—')+'</span></div>'+
+        '<div class="a">Correcta: <span style="color:var(--ok)">'+correctAnswerHTML(r.q)+'</span></div>'+
+        '<div class="a small" style="margin-top:5px">'+r.q.expl+'</div></div>';
+    }).join('')+'</div>' : '<p class="muted">Sin errores. Examen perfecto.</p>';
+  h += '<div class="row" style="margin-top:16px"><button class="btn" id="eAgain">Repetir examen</button>'+
+       '<button class="btn ghost" id="eProg">Ver progreso</button></div></div>';
+
+  S.exams.push({score:score, ok:ok, total:res.length, ts:Date.now()});
+  $('#eRun').hidden = true; $('#eRun').innerHTML=''; exam=null;
+  $('#eResult').hidden = false; $('#eResult').innerHTML = h;
+  $('#eAgain').onclick = startExam;
+  $('#eProg').onclick  = ()=> selectTab('progreso');
+  $('#eResult').scrollIntoView({block:'start', behavior:'smooth'});
+}
+function statRow(name, o){
+  const p = pct(o);
+  return '<div class="stat"><span class="nm">'+esc(name)+'</span><span class="vl">'+o.c+'/'+o.a+' · '+p+'%</span>'+
+    '<span class="meter"><i style="width:'+p+'%;background:'+meterColor(p)+'"></i></span></div>';
+}
+
+/* =====================================================================
+   10. VISTA: PROGRESO
+   ===================================================================== */
+function renderProgreso(){
+  const st = S.stats, tot = Object.keys(st.topic).reduce((a,k)=>({a:a.a+st.topic[k].a, c:a.c+st.topic[k].c}),{a:0,c:0});
+  let h = '';
+  if(!tot.a){
+    h = '<div class="card"><h2 style="font-size:1.15rem">Todavía no hay datos</h2>'+
+        '<p class="muted" style="margin:6px 0 14px">Haz una ronda de práctica o un examen simulado y aquí verás el porcentaje de aciertos por tema y por tipo de pregunta.</p>'+
+        '<button class="btn" id="goP">Ir a Práctica</button></div>';
+    $('#progBody').innerHTML = h; $('#goP').onclick = ()=>selectTab('practica'); return;
+  }
+  const gp = Math.round(100*tot.c/tot.a);
+  h += '<div class="card"><div class="kpis">'+
+    '<div class="kpi"><b style="color:'+meterColor(gp)+'">'+gp+'%</b><span>Aciertos</span></div>'+
+    '<div class="kpi"><b>'+tot.a+'</b><span>Intentos</span></div>'+
+    '<div class="kpi"><b>'+tot.c+'</b><span>Correctas</span></div>'+
+    '<div class="kpi"><b>'+S.exams.length+'</b><span>Exámenes</span></div></div>';
+  const weak = BLOCKS.filter(b=>st.topic[b.id] && st.topic[b.id].a>=2)
+                     .sort((a,b)=>pct(st.topic[a.id])-pct(st.topic[b.id]));
+  const weakT = TYPE_ORDER.filter(t=>st.type[t] && st.type[t].a>=2)
+                     .sort((a,b)=>pct(st.type[a])-pct(st.type[b]));
+  const untouched = BLOCKS.filter(b=>!st.topic[b.id]);
+  let rec = '';
+  if(weak.length && pct(st.topic[weak[0].id])<80)
+    rec += 'Repasa <b>'+esc(weak[0].name)+'</b> ('+pct(st.topic[weak[0].id])+'% de aciertos): abre su tarjeta en Repaso y practica ese tema en solitario. ';
+  if(weakT.length && pct(st.type[weakT[0]])<80)
+    rec += 'Tu punto flojo por formato son las preguntas de tipo <b>'+weakT[0]+' · '+TYPE_NAME[weakT[0]]+'</b> ('+pct(st.type[weakT[0]])+'%). ';
+  if(untouched.length) rec += 'Aún no has practicado: <b>'+untouched.map(b=>esc(b.name)).join(', ')+'</b>.';
+  if(!rec) rec = 'Vas bien en todos los temas. Haz un examen simulado completo para confirmarlo.';
+  h += '<div class="rec">'+rec+'</div></div>';
+
+  h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Por tema</h3><div class="stat-grid">'+
+    BLOCKS.map(b=> st.topic[b.id] ? statRow(b.name, st.topic[b.id])
+      : '<div class="stat"><span class="nm" style="color:var(--ink-3)">'+esc(b.name)+'</span><span class="vl">sin intentos</span><span class="meter"></span></div>').join('')+
+    '</div></div>';
+  h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Por tipo de pregunta</h3><div class="stat-grid">'+
+    TYPE_ORDER.map(t=> st.type[t] ? statRow('Tipo '+t+' · '+TYPE_NAME[t], st.type[t])
+      : '<div class="stat"><span class="nm" style="color:var(--ink-3)">Tipo '+t+' · '+TYPE_NAME[t]+'</span><span class="vl">sin intentos</span><span class="meter"></span></div>').join('')+
+    '</div></div>';
+
+  const last = S.log.slice(-12).reverse().filter(l=>!l.ok);
+  if(last.length){
+    h += '<div class="card"><h3 style="font-size:1.02rem;margin-bottom:12px">Últimos fallos</h3><div class="errlist">'+
+      last.map(l=>'<div class="erritem"><div class="q">'+l.prompt+'</div>'+
+        '<div class="a small" style="margin-top:4px"><em>'+esc(SENT[l.sid].plain)+'</em></div>'+
+        '<div class="a">Correcta: <span style="color:var(--ok)">'+l.good+'</span></div>'+
+        '<div class="a small" style="margin-top:5px">'+l.expl+'</div></div>').join('')+'</div></div>';
+  }
+  $('#progBody').innerHTML = h;
+}
+
+/* =====================================================================
+   11. NAVEGACIÓN, TEMA, TECLADO, ARRANQUE
+   ===================================================================== */
+const TABS = ['repaso','practica','examen','progreso'];
+function selectTab(id){
+  TABS.forEach(t=>{
+    $('#tab-'+t).setAttribute('aria-selected', String(t===id));
+    $('#v-'+t).hidden = (t!==id);
+  });
+  if(id==='progreso') renderProgreso();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function activeRunner(){
+  if(!$('#v-practica').hidden && practice) return practice;
+  if(!$('#v-examen').hidden && exam) return exam;
+  return null;
+}
+function initCountdown(){
+  const exd = new Date(2026,8,10);
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d = Math.round((exd-today)/86400000);
+  const n=$('#cdNum'), l=$('#cdLab');
+  if(d>1){ n.textContent=d; l.textContent='días para el examen'; }
+  else if(d===1){ n.textContent='1'; l.textContent='día para el examen'; }
+  else if(d===0){ n.textContent='Hoy'; l.textContent='es el examen'; }
+  else { n.textContent=Math.abs(d); l.textContent='días desde el examen'; }
+  $('#examDate').textContent = 'Examen: ' + exd.toLocaleDateString('es-ES',{weekday:'long', day:'numeric', month:'long', year:'numeric'});
+}
+function resetAll(){
+  if(!confirm('Se borrarán las estadísticas y el historial de esta sesión. ¿Continuar?')) return;
+  S.stats={topic:{},type:{}}; S.log=[]; S.exams=[];
+  Object.keys(SCRAMBLE_CACHE).forEach(k=>delete SCRAMBLE_CACHE[k]);
+  if(examTimer){ clearInterval(examTimer); examTimer=null; }
+  practice=null; exam=null;
+  $('#pSetup').hidden=false; $('#pRun').hidden=true; $('#pRun').innerHTML='';
+  $('#eSetup').hidden=false; $('#eRun').hidden=true; $('#eRun').innerHTML='';
+  $('#eResult').hidden=true; $('#eResult').innerHTML='';
+  renderProgreso(); selectTab('repaso');
+}
+document.addEventListener('keydown', function(ev){
+  const tag = (document.activeElement||{}).tagName;
+  const typing = tag==='INPUT' || tag==='TEXTAREA' || tag==='SELECT';
+  const r = activeRunner();
+  if(ev.key==='Enter'){
+    if(tag==='SELECT') return;
+    const btn = $('#mainBtn');
+    if(btn && r){ ev.preventDefault(); btn.click(); }
+    return;
+  }
+  if(typing) return;
+  if(!r) return;
+  if(ev.key==='ArrowRight'){ ev.preventDefault(); r.go(r.i+1); }
+  else if(ev.key==='ArrowLeft'){ ev.preventDefault(); r.go(r.i-1); }
+  else if(/^[1-4]$/.test(ev.key)){
+    const opt = $$('.opt')[+ev.key-1];
+    if(opt && !opt.disabled){ ev.preventDefault(); opt.click(); }
+  }
+});
+function initTheme(){
+  const btn = $('#themeBtn');
+  btn.onclick = function(){
+    const dark = document.documentElement.getAttribute('data-theme')==='dark';
+    document.documentElement.setAttribute('data-theme', dark?'light':'dark');
+    btn.textContent = dark?'Modo oscuro':'Modo claro';
+    btn.setAttribute('aria-pressed', String(!dark));
+  };
+  if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) btn.click();
+}
+function init(){
+  initCountdown(); initTheme(); renderRepaso();
+  $('#pTopic').innerHTML = '<option value="all">Todos los temas (12 oraciones por ronda)</option>'+
+    BLOCKS.map(b=>'<option value="'+b.id+'">'+b.n+'. '+esc(b.name)+'</option>').join('');
+  TABS.forEach(t=> $('#tab-'+t).onclick = ()=>selectTab(t));
+  $('#pStart').onclick = startPractice;
+  $('#eStart').onclick = startExam;
+  $('#resetBtn').onclick = resetAll;
+  selectTab('repaso');
+}
+init();
+</script>
+</body>
+</html>
