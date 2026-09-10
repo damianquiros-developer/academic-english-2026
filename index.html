@@ -838,9 +838,8 @@ function genQuestions(s){
 
   /* C — etiquetado completo */
   if(toks.length<=12){
-    const roles = ROLE_ORDER.filter(r=> r==='x' || toks.some(t=>t.role===r));
     qs.push(mkQ(s,'C',{ kind:'label', prompt:'Etiqueta cada palabra de la oración. Elige una etiqueta y toca las palabras que le corresponden.',
-      labels:roles, expl:'Cada componente en su color: así se reconoce la estructura completa.' }));
+      labels:ROLE_ORDER.slice(), expl:'Cada componente en su color: así se reconoce la estructura completa.' }));
   }
 
   /* H — ordenar palabras */
@@ -1188,11 +1187,13 @@ function buildPracticeItems(topic){
   pool = shuffle(pool).slice(0, topic==='all' ? 12 : pool.length);
   const items = [];
   pool.forEach(s=>{
-    const qs   = genQuestions(s);
-    const pri  = qs.filter(q=>'ABCD'.indexOf(q.type)>=0);
-    const rest = qs.filter(q=>'ABCD'.indexOf(q.type)<0);
-    const n    = 2 + rnd(4);
-    let sel = shuffle(pri).slice(0, Math.max(2, Math.min(pri.length, rest.length? n-1 : n)));
+    const qs    = genQuestions(s);
+    const first = shuffle(qs.filter(q=>q.type==='A'||q.type==='D'))[0];
+    const pri   = qs.filter(q=>'ABCD'.indexOf(q.type)>=0 && q!==first);
+    const rest  = qs.filter(q=>'ABCD'.indexOf(q.type)<0);
+    const n     = 2 + rnd(4);
+    const nPri  = Math.max(1, Math.min(pri.length, (rest.length ? n-1 : n) - 1));
+    let sel = [first].concat(shuffle(pri).slice(0,nPri));
     const need = n - sel.length;
     if(need>0) sel = sel.concat(shuffle(rest).slice(0,need));
     sel.sort((a,b)=> TYPE_ORDER.indexOf(a.type)-TYPE_ORDER.indexOf(b.type));
@@ -1229,7 +1230,8 @@ function buildExamItems(){
   const byType = {};
   SENT.forEach(s=> genQuestions(s).forEach(q=>{ (byType[q.type]=byType[q.type]||[]).push(q); }));
   Object.keys(byType).forEach(k=> byType[k]=shuffle(byType[k]));
-  const types = shuffle(Object.keys(byType));
+  const base = Object.keys(byType);
+  const types = shuffle(base.concat(base.filter(t=>'ABCD'.indexOf(t)>=0)));
   const picked = []; let guard = 0;
   while(picked.length<30 && guard++<300){
     for(let i=0;i<types.length && picked.length<30;i++){
