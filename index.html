@@ -837,7 +837,7 @@ function genQuestions(s){
   });
 
   /* C — etiquetado completo */
-  if(toks.length<=10){
+  if(toks.length<=12){
     const roles = ROLE_ORDER.filter(r=> r==='x' || toks.some(t=>t.role===r));
     qs.push(mkQ(s,'C',{ kind:'label', prompt:'Etiqueta cada palabra de la oración. Elige una etiqueta y toca las palabras que le corresponden.',
       labels:roles, expl:'Cada componente en su color: así se reconoce la estructura completa.' }));
@@ -914,8 +914,9 @@ function correctAnswerHTML(q){
    ===================================================================== */
 function sentStatic(toks, blankAt){
   return toks.map(t=>{
-    if(blankAt===t.i) return esc(t.pre)+'<span class="w r-v" style="letter-spacing:.1em">______</span>'+esc(t.post);
-    return esc(t.pre)+'<span class="w">'+esc(t.word)+'</span>'+esc(t.post);
+    if(blankAt===t.i) return '<span class="w">'+esc(t.pre)+
+      '<span class="r-v" style="letter-spacing:.12em;padding:2px 4px;border-radius:5px">______</span>'+esc(t.post)+'</span>';
+    return '<span class="w">'+esc(t.disp)+'</span>';
   }).join(' ');
 }
 function sentClick(toks){
